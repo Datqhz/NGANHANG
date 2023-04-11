@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraBars;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,12 +11,26 @@ using System.Windows.Forms;
 
 namespace NGANHANG
 {
-    public partial class frmMain : Form
+    public partial class form : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public frmMain()
+        public form()
         {
             InitializeComponent();
-            StartPosition = FormStartPosition.CenterScreen;
+            
+        }
+
+        private void btnDangXuat_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            DialogResult choice = MessageBox.Show("Bạn có thực sự muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(choice == DialogResult.Yes)
+            {
+                this.Hide();
+                Program.frmDN.cmbChiNhanh.SelectedIndex = 0;
+                Program.frmDN.txtTenDN.Text = "";
+                Program.frmDN.txtMatKhau.Text = "";
+                Program.frmDN.Show();
+                
+            }
         }
     }
 }

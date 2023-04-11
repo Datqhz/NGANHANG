@@ -154,13 +154,13 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtMatKhau;
-        private System.Windows.Forms.TextBox txtTenDN;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbChiNhanh;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnThoat;
+        public System.Windows.Forms.TextBox txtMatKhau;
+        public System.Windows.Forms.TextBox txtTenDN;
+        public System.Windows.Forms.ComboBox cmbChiNhanh;
     }
 }

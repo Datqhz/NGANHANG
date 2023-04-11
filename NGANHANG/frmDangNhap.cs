@@ -110,7 +110,7 @@ namespace NGANHANG
             Program.frmChinh.NHOM.Text = "NHÓM: " + Program.mGroup;
 
             Program.frmChinh.Show();
-            this.Hide();
+            Hide();
         }
 
         private void frmDangNhap_Load(object sender, EventArgs e)

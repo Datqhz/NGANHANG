@@ -22,10 +22,14 @@ C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\bin\Debug\DevExpress.Pdf.
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.csproj.AssemblyReference.cache
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.csproj.SuggestedBindingRedirects.cache
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmDangNhap.resources
-C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmMain.resources
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.Properties.Resources.resources
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.csproj.GenerateResource.cache
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.csproj.CoreCompileInputs.cache
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.csproj.CopyComplete
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.exe
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.pdb
+C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\bin\Debug\DevExpress.XtraBars.v22.2.dll
+C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\bin\Debug\DevExpress.XtraBars.v22.2.xml
+C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.exe.licenses
+C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.test.resources
+C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.form.resources

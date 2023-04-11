@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
+using DevExpress.Utils.DirectXPaint;
 
 namespace NGANHANG
 {
@@ -25,6 +26,7 @@ namespace NGANHANG
         public static String mlogin = "";
         public static String mGroup = "";
         public static String mHoten = "";
+        //TK để kết nối tới phân mảnh khác 
         public static String remotelogin = "HTKN";
         public static String remotepassword = "123456";
         public static String mloginDN = "";
@@ -33,7 +35,7 @@ namespace NGANHANG
 
         public static BindingSource bds_dspm = new BindingSource(); // giu ds phan manh khi dang nhap
 
-        public static frmMain frmChinh  = new frmMain();
+        public static form frmChinh = new form();
         public static frmDangNhap frmDN = new frmDangNhap();
 
         public static int KetNoi()
@@ -115,7 +117,7 @@ namespace NGANHANG
         }
         public static void Start()
         {
-            Application.Run(Program.frmDN);
+            Application.Run(frmDN);
         }
         /// <summary>
         /// The main entry point for the application.

@@ -36,7 +36,7 @@ namespace NGANHANG
         public static BindingSource bds_dspm = new BindingSource(); // giu ds phan manh khi dang nhap
 
         public static form frmChinh = new form();
-        public static frmDangNhap frmDN = new frmDangNhap();
+        //public static frmDangNhap frmDN = new frmDangNhap();
 
         public static int KetNoi()
         {
@@ -117,7 +117,7 @@ namespace NGANHANG
         }
         public static void Start()
         {
-            Application.Run(frmDN);
+            Application.Run(frmChinh);
         }
         /// <summary>
         /// The main entry point for the application.

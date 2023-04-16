@@ -19,17 +19,53 @@ namespace NGANHANG
             
         }
 
+        private Form CheckExists(Type ftype)
+        {
+            foreach (Form f in this.MdiChildren)
+                if (f.GetType() == ftype)
+                    return f;
+            return null;
+        }
+
         private void btnDangXuat_ItemClick(object sender, ItemClickEventArgs e)
         {
             DialogResult choice = MessageBox.Show("Bạn có thực sự muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if(choice == DialogResult.Yes)
             {
-                this.Hide();
-                Program.frmDN.cmbChiNhanh.SelectedIndex = 0;
-                Program.frmDN.txtTenDN.Text = "";
-                Program.frmDN.txtMatKhau.Text = "";
-                Program.frmDN.Show();
-                
+                Program.mChiNhanh = 0;
+                Program.mloginDN = "";
+                Program.passwordDN = "";
+                this.MANV.Text = "";
+                this.HOTEN.Text = "";
+                this.NHOM.Text = "";
+            }
+        }
+
+
+        private void btnDangNhap_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            
+                Form frm = this.CheckExists(typeof(frmDangNhap));
+                if (frm != null) frm.Activate();
+                else
+                {
+                    frmDangNhap f = new frmDangNhap();
+                    f.MdiParent = this;
+                    f.Show();
+                }
+            
+
+        }
+
+        private void btnDSNV_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frmDSNhanVien));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmDSNhanVien f = new frmDSNhanVien();
+                f.MdiParent = this;
+                f.Show();
             }
         }
     }

@@ -67,7 +67,6 @@ namespace NGANHANG
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            Close();
             Program.frmChinh.Close();
         }
 
@@ -108,9 +107,6 @@ namespace NGANHANG
             Program.frmChinh.MANV.Text = "MÃ NV: " + Program.username;
             Program.frmChinh.HOTEN.Text = "HỌ TÊN: " + Program.mHoten;
             Program.frmChinh.NHOM.Text = "NHÓM: " + Program.mGroup;
-
-            Program.frmChinh.Show();
-            Hide();
         }
 
         private void frmDangNhap_Load(object sender, EventArgs e)

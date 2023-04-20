@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace NGANHANG
     {
         private String macn = "";
         private int vitri = 0;
+        private int chucnang;
         //private String manv = "";
         public frmDSNhanVien()
         {
@@ -71,6 +73,7 @@ namespace NGANHANG
 
         private void btnThem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            txtMaNV.Enabled = true;
             vitri = bdsNV.Position;//Lấy vị trí hiện tại
             grbNhapLieu.Enabled = true;
             bdsNV.AddNew();
@@ -78,6 +81,7 @@ namespace NGANHANG
             btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled  = btnLamMoi.Enabled = btnDong.Enabled = false;
             btnPhucHoi.Enabled = btnGhi.Enabled = true;
             gcNhanVien.Enabled = false;
+            chucnang = 1;
         }
 
         private void btnPhucHoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -95,6 +99,8 @@ namespace NGANHANG
 
         private void btnSua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            chucnang = 2;
+            txtMaNV.Enabled = false;
             vitri = bdsNV.Position;//Lấy vị trí hiện tại
             grbNhapLieu.Enabled = true;
             btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnLamMoi.Enabled = btnDong.Enabled = false;
@@ -178,6 +184,21 @@ namespace NGANHANG
 
             try
             {
+                if (chucnang == 1)
+                {
+                    Program.myReader = Program.ExecSqlDataReader("EXEC find_nv_by_manv '" + txtMaNV.Text.Trim() + "'");
+                    Program.myReader.Read();
+                    if (Program.myReader.HasRows)
+                    {
+                        MessageBox.Show("Mã nhân viên đã tồn tại", "Thông báo", MessageBoxButtons.OK);
+                        Program.myReader.Close();
+                        return;
+                    }
+                    else
+                    {
+                        Program.myReader.Close();
+                    }
+                }
                 bdsNV.EndEdit();
                 bdsNV.ResetCurrentItem(); //Đưa các thông tin vừa điền lên lưới
                 this.nhanVienTableAdapter.Connection.ConnectionString = Program.connstr;
@@ -225,6 +246,11 @@ namespace NGANHANG
                 this.gD_CHUYENTIENTableAdapter.Fill(this.DS.GD_CHUYENTIEN);
                 macn = ((DataRowView)bdsNV[0])["MANV"].ToString();
             }
+        }
+
+        private void btnDong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Close();
         }
     }
 }

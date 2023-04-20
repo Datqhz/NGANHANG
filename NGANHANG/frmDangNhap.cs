@@ -107,6 +107,7 @@ namespace NGANHANG
             Program.frmChinh.MANV.Text = "MÃ NV: " + Program.username;
             Program.frmChinh.HOTEN.Text = "HỌ TÊN: " + Program.mHoten;
             Program.frmChinh.NHOM.Text = "NHÓM: " + Program.mGroup;
+            Close();
         }
 
         private void frmDangNhap_Load(object sender, EventArgs e)

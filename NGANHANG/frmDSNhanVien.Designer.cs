@@ -48,6 +48,7 @@
             this.btnPhucHoi = new DevExpress.XtraBars.BarButtonItem();
             this.btnLamMoi = new DevExpress.XtraBars.BarButtonItem();
             this.btnGhi = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.btnDong = new DevExpress.XtraBars.BarButtonItem();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
@@ -87,7 +88,6 @@
             this.txtMaNV = new System.Windows.Forms.TextBox();
             this.bdsGR = new System.Windows.Forms.BindingSource(this.components);
             this.bdsCT = new System.Windows.Forms.BindingSource(this.components);
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             mANVLabel = new System.Windows.Forms.Label();
             hOLabel = new System.Windows.Forms.Label();
             tENLabel = new System.Windows.Forms.Label();
@@ -296,6 +296,14 @@
             this.btnGhi.Name = "btnGhi";
             this.btnGhi.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnGhi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnGhi_ItemClick);
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Chuyển công tác";
+            this.barButtonItem1.Id = 11;
+            this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // btnDong
             // 
@@ -636,14 +644,6 @@
             // 
             this.bdsCT.DataMember = "FK_GD_CHUYENTIEN_NhanVien";
             this.bdsCT.DataSource = this.bdsNV;
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "Chuyển công tác";
-            this.barButtonItem1.Id = 11;
-            this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // frmDSNhanVien
             // 

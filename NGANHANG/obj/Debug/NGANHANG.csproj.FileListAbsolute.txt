@@ -45,3 +45,5 @@ C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\bin\Debug\DevExpress.Rich
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\bin\Debug\DevExpress.XtraTreeList.v22.2.xml
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\bin\Debug\DevExpress.Office.v22.2.Core.xml
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmDSNhanVien.resources
+C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmTaoLogin.resources
+C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmDSKhachHang.resources

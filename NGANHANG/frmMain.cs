@@ -38,6 +38,11 @@ namespace NGANHANG
                 this.MANV.Text = "";
                 this.HOTEN.Text = "";
                 this.NHOM.Text = "";
+                foreach (Form f in this.MdiChildren)
+                {
+                    f.Close();
+                }
+                    
             }
         }
 
@@ -64,6 +69,18 @@ namespace NGANHANG
             else
             {
                 frmDSNhanVien f = new frmDSNhanVien();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
+
+        private void btnTaoLogin_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frmTaoLogin));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmTaoLogin f = new frmTaoLogin();
                 f.MdiParent = this;
                 f.Show();
             }

@@ -37,6 +37,11 @@
             this.btnGuiRut = new DevExpress.XtraBars.BarButtonItem();
             this.btnDSNV = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDangNhap = new DevExpress.XtraBars.BarButtonItem();
+            this.btnThoat = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTaoLogin = new DevExpress.XtraBars.BarButtonItem();
+            this.rbHeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribDanhMuc = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -50,10 +55,6 @@
             this.MANV = new System.Windows.Forms.ToolStripStatusLabel();
             this.HOTEN = new System.Windows.Forms.ToolStripStatusLabel();
             this.NHOM = new System.Windows.Forms.ToolStripStatusLabel();
-            this.rbHeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.btnDangNhap = new DevExpress.XtraBars.BarButtonItem();
-            this.btnThoat = new DevExpress.XtraBars.BarButtonItem();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -75,10 +76,11 @@
             this.btnDSNV,
             this.barButtonItem3,
             this.btnDangNhap,
-            this.btnThoat});
+            this.btnThoat,
+            this.btnTaoLogin});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbon.MaxItemId = 10;
+            this.ribbon.MaxItemId = 11;
             this.ribbon.Name = "ribbon";
             this.ribbon.OptionsMenuMinWidth = 412;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -122,7 +124,7 @@
             // 
             this.btnDSNV.Caption = "Danh sách nhân viên";
             this.btnDSNV.Id = 6;
-            this.btnDSNV.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
+            this.btnDSNV.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDSNV.ImageOptions.SvgImage")));
             this.btnDSNV.Name = "btnDSNV";
             this.btnDSNV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDSNV_ItemClick);
             // 
@@ -132,6 +134,43 @@
             this.barButtonItem3.Id = 7;
             this.barButtonItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
             this.barButtonItem3.Name = "barButtonItem3";
+            // 
+            // btnDangNhap
+            // 
+            this.btnDangNhap.Caption = "Đăng nhập";
+            this.btnDangNhap.Id = 8;
+            this.btnDangNhap.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDangNhap.ImageOptions.SvgImage")));
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangNhap_ItemClick);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Caption = "Thoát";
+            this.btnThoat.Id = 9;
+            this.btnThoat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnThoat.ImageOptions.SvgImage")));
+            this.btnThoat.Name = "btnThoat";
+            // 
+            // btnTaoLogin
+            // 
+            this.btnTaoLogin.Caption = "Tạo tài khoản";
+            this.btnTaoLogin.Id = 10;
+            this.btnTaoLogin.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnTaoLogin.ImageOptions.SvgImage")));
+            this.btnTaoLogin.Name = "btnTaoLogin";
+            this.btnTaoLogin.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTaoLogin_ItemClick);
+            // 
+            // rbHeThong
+            // 
+            this.rbHeThong.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup5});
+            this.rbHeThong.Name = "rbHeThong";
+            this.rbHeThong.Text = "Hệ thống";
+            // 
+            // ribbonPageGroup5
+            // 
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnDangNhap);
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnThoat);
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnTaoLogin);
+            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             // 
             // ribDanhMuc
             // 
@@ -230,34 +269,6 @@
             this.NHOM.Size = new System.Drawing.Size(55, 20);
             this.NHOM.Text = "NHOM";
             // 
-            // rbHeThong
-            // 
-            this.rbHeThong.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup5});
-            this.rbHeThong.Name = "rbHeThong";
-            this.rbHeThong.Text = "Hệ thống";
-            // 
-            // ribbonPageGroup5
-            // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.btnDangNhap);
-            this.ribbonPageGroup5.ItemLinks.Add(this.btnThoat);
-            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            // 
-            // btnDangNhap
-            // 
-            this.btnDangNhap.Caption = "Đăng nhập";
-            this.btnDangNhap.Id = 8;
-            this.btnDangNhap.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
-            this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangNhap_ItemClick);
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Caption = "Thoát";
-            this.btnThoat.Id = 9;
-            this.btnThoat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem5.ImageOptions.SvgImage")));
-            this.btnThoat.Name = "btnThoat";
-            // 
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
@@ -312,5 +323,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage rbHeThong;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private DevExpress.XtraBars.BarButtonItem btnTaoLogin;
     }
 }

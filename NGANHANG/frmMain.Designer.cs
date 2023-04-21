@@ -36,7 +36,7 @@
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.btnGuiRut = new DevExpress.XtraBars.BarButtonItem();
             this.btnDSNV = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDSKH = new DevExpress.XtraBars.BarButtonItem();
             this.btnDangNhap = new DevExpress.XtraBars.BarButtonItem();
             this.btnThoat = new DevExpress.XtraBars.BarButtonItem();
             this.btnTaoLogin = new DevExpress.XtraBars.BarButtonItem();
@@ -74,7 +74,7 @@
             this.barButtonItem1,
             this.btnGuiRut,
             this.btnDSNV,
-            this.barButtonItem3,
+            this.btnDSKH,
             this.btnDangNhap,
             this.btnThoat,
             this.btnTaoLogin});
@@ -128,12 +128,13 @@
             this.btnDSNV.Name = "btnDSNV";
             this.btnDSNV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDSNV_ItemClick);
             // 
-            // barButtonItem3
+            // btnDSKH
             // 
-            this.barButtonItem3.Caption = "Danh sách khách hàng";
-            this.barButtonItem3.Id = 7;
-            this.barButtonItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
-            this.barButtonItem3.Name = "barButtonItem3";
+            this.btnDSKH.Caption = "Danh sách khách hàng";
+            this.btnDSKH.Id = 7;
+            this.btnDSKH.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
+            this.btnDSKH.Name = "btnDSKH";
+            this.btnDSKH.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDSKH_ItemClick);
             // 
             // btnDangNhap
             // 
@@ -189,7 +190,7 @@
             // 
             // ribbonPageGroup4
             // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnDSKH);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "Khách hàng";
             // 
@@ -317,7 +318,7 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem btnGuiRut;
         private DevExpress.XtraBars.BarButtonItem btnDSNV;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem btnDSKH;
         private DevExpress.XtraBars.BarButtonItem btnDangNhap;
         private DevExpress.XtraBars.BarButtonItem btnThoat;
         private DevExpress.XtraBars.Ribbon.RibbonPage rbHeThong;

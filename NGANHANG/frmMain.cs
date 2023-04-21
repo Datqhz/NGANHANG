@@ -85,5 +85,17 @@ namespace NGANHANG
                 f.Show();
             }
         }
+
+        private void btnDSKH_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frmDSKhachHang));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmDSKhachHang f = new frmDSKhachHang();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
     }
 }

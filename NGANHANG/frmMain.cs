@@ -97,5 +97,10 @@ namespace NGANHANG
                 f.Show();
             }
         }
+
+        private void btnTKKhachHang_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
     }
 }

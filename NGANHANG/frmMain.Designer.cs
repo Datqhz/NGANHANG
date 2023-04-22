@@ -56,6 +56,7 @@
             this.HOTEN = new System.Windows.Forms.ToolStripStatusLabel();
             this.NHOM = new System.Windows.Forms.ToolStripStatusLabel();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.btnTKKhachHang = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
@@ -77,10 +78,11 @@
             this.btnDSKH,
             this.btnDangNhap,
             this.btnThoat,
-            this.btnTaoLogin});
+            this.btnTaoLogin,
+            this.btnTKKhachHang});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbon.MaxItemId = 11;
+            this.ribbon.MaxItemId = 12;
             this.ribbon.Name = "ribbon";
             this.ribbon.OptionsMenuMinWidth = 412;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -132,7 +134,7 @@
             // 
             this.btnDSKH.Caption = "Danh sách khách hàng";
             this.btnDSKH.Id = 7;
-            this.btnDSKH.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
+            this.btnDSKH.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDSKH.ImageOptions.SvgImage")));
             this.btnDSKH.Name = "btnDSKH";
             this.btnDSKH.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDSKH_ItemClick);
             // 
@@ -191,6 +193,7 @@
             // ribbonPageGroup4
             // 
             this.ribbonPageGroup4.ItemLinks.Add(this.btnDSKH);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnTKKhachHang);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "Khách hàng";
             // 
@@ -274,6 +277,15 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
+            // btnTKKhachHang
+            // 
+            this.btnTKKhachHang.Caption = "Tài khoản khách hàng";
+            this.btnTKKhachHang.Id = 11;
+            this.btnTKKhachHang.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.btnTKKhachHang.Name = "btnTKKhachHang";
+            this.btnTKKhachHang.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnTKKhachHang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTKKhachHang_ItemClick);
+            // 
             // form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -325,5 +337,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
         private DevExpress.XtraBars.BarButtonItem btnTaoLogin;
+        private DevExpress.XtraBars.BarButtonItem btnTKKhachHang;
     }
 }

@@ -101,7 +101,7 @@ namespace NGANHANG
                 return;
             }else
             {
-                if(MessageBox.Show("Bạn có thực sự muốn xóa thông tin khách hàng này?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.OK)
+                if(MessageBox.Show("Bạn có thực sự muốn xóa thông tin khách hàng này?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     try
                     {
@@ -125,7 +125,7 @@ namespace NGANHANG
         private void btnPhucHoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             bdsKhachHang.CancelEdit();
-            if(btnThem.Enabled = false)
+            if(btnThem.Enabled == false)
             {
                 bdsKhachHang.Position = row;
             }
@@ -176,18 +176,20 @@ namespace NGANHANG
 
             try
             {
-                Program.myReader = Program.ExecSqlDataReader("EXEC find_KH_by_CMND '" + txtCMND.Text.Trim() + "'");
-                Program.myReader.Read();
-                if (Program.myReader.HasRows)
+                if(chucnang == 1)
                 {
-                    MessageBox.Show("Số CMND của khách hàng đã tồn tại trên hệ thống!!", "Thông báo", MessageBoxButtons.OK);
-                    Program.myReader.Close();
-                    return;
-                }else
-                {
-                    Program.myReader.Close();
+                    Program.myReader = Program.ExecSqlDataReader("EXEC find_KH_by_CMND '" + txtCMND.Text.Trim() + "'");
+                    Program.myReader.Read();
+                    if (Program.myReader.HasRows)
+                    {
+                        MessageBox.Show("Số CMND của khách hàng đã tồn tại trên hệ thống!!", "Thông báo", MessageBoxButtons.OK);
+                        Program.myReader.Close();
+                        return;
+                    }else
+                    {
+                        Program.myReader.Close();
+                    }
                 }
-                
                 bdsKhachHang.EndEdit();
                 bdsKhachHang.ResetCurrentItem();
                 this.khachHangTableAdapter.Connection.ConnectionString = Program.connstr;
@@ -199,7 +201,7 @@ namespace NGANHANG
                 MessageBox.Show("Lỗi ghi nhân viên.\n" + ex.Message, "Thông báo", MessageBoxButtons.OK);
                 return;
             }
-            btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = true;
+            btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnLamMoi.Enabled = true;
             btnGhi.Enabled = btnPhucHoi.Enabled = false;
             grbTT.Enabled = false;
             gcKhachHang.Enabled = true;

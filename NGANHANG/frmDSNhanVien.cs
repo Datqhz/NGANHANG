@@ -50,10 +50,13 @@ namespace NGANHANG
             cmbChiNhanh.DisplayMember = "TENCN";
             cmbChiNhanh.ValueMember = "TENSERVER";
             cmbChiNhanh.SelectedIndex = Program.mChiNhanh;
+/*            Console.WriteLine(cmbChiNhanh.SelectedItem.ToString());
+            Console.WriteLine(cmbChiNhanh.SelectedValue);*/
             if (Program.mGroup == "NGANHANG")
             {
                 btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnPhucHoi.Enabled = btnGhi.Enabled = false;
                 cmbChiNhanh.Enabled = true;
+                grbNhapLieu.Enabled = false;
             }
             else
             {
@@ -216,7 +219,7 @@ namespace NGANHANG
 
         private void cmbChiNhanh_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cmbChiNhanh.SelectedItem.ToString() == "System.Data.DataRowView") //Kiểm tra xem cmb đã có các phân mảnh hay chưa
+            if((cmbChiNhanh.SelectedValue.ToString() == "System.Data.DataRowView")) //Kiểm tra xem cmb đã có các phân mảnh hay chưa
             {
                 return;
             }
@@ -244,7 +247,7 @@ namespace NGANHANG
 
                 this.gD_CHUYENTIENTableAdapter.Connection.ConnectionString = Program.connstr;
                 this.gD_CHUYENTIENTableAdapter.Fill(this.DS.GD_CHUYENTIEN);
-                macn = ((DataRowView)bdsNV[0])["MANV"].ToString();
+                macn = ((DataRowView)bdsNV[0])["MACN"].ToString();
             }
         }
 

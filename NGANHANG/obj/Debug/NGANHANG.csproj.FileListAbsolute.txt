@@ -47,3 +47,5 @@ C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\bin\Debug\DevExpress.Offi
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmDSNhanVien.resources
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmTaoLogin.resources
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmDSKhachHang.resources
+C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmChuyenGuiRut.resources
+C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmTaoTKKH.resources

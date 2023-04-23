@@ -102,5 +102,17 @@ namespace NGANHANG
         {
 
         }
+
+        private void btnCGR_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frmChuyenGuiRut));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmChuyenGuiRut f = new frmChuyenGuiRut();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
     }
 }

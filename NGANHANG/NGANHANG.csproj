@@ -61,6 +61,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmChuyenGuiRut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChuyenGuiRut.Designer.cs">
+      <DependentUpon>frmChuyenGuiRut.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     <Compile Include="frmTaoLogin.Designer.cs">
       <DependentUpon>frmTaoLogin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmChuyenGuiRut.resx">
+      <DependentUpon>frmChuyenGuiRut.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>

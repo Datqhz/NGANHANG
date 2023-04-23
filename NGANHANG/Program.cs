@@ -52,7 +52,7 @@ namespace NGANHANG
 
             catch (Exception e)
             {
-                MessageBox.Show("Lỗi kết nối cơ sở dữ liệu.\nBạn xem lại user name và password.\n " + e.Message, "", MessageBoxButtons.OK);
+                MessageBox.Show("Lỗi kết nối cơ sở dữ liệu.\nBạn xem lại user name và password.\n " + e.Message, "Thông báo", MessageBoxButtons.OK);
                 return 0;
             }
         }
@@ -96,7 +96,7 @@ namespace NGANHANG
             try
             {
                 sqlcmd.ExecuteNonQuery(); //conn.Close()
-                MessageBox.Show("Thao tác thành công!!", "", MessageBoxButtons.OK);
+                MessageBox.Show("Thực hiện thành công!!", "Thông báo", MessageBoxButtons.OK);
             }
             catch (SqlException ex)
             {

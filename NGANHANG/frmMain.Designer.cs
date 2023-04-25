@@ -40,6 +40,7 @@
             this.btnThoat = new DevExpress.XtraBars.BarButtonItem();
             this.btnTaoLogin = new DevExpress.XtraBars.BarButtonItem();
             this.btnTKKhachHang = new DevExpress.XtraBars.BarButtonItem();
+            this.btnThongKeGD = new DevExpress.XtraBars.BarButtonItem();
             this.rbHeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribDanhMuc = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -77,10 +78,11 @@
             this.btnDangNhap,
             this.btnThoat,
             this.btnTaoLogin,
-            this.btnTKKhachHang});
+            this.btnTKKhachHang,
+            this.btnThongKeGD});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbon.MaxItemId = 12;
+            this.ribbon.MaxItemId = 13;
             this.ribbon.Name = "ribbon";
             this.ribbon.OptionsMenuMinWidth = 412;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -102,7 +104,7 @@
             // 
             this.btnCGR.Caption = "Chuyển-Gửi rút tiền";
             this.btnCGR.Id = 2;
-            this.btnCGR.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnChuyenTien.ImageOptions.SvgImage")));
+            this.btnCGR.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCGR.ImageOptions.SvgImage")));
             this.btnCGR.Name = "btnCGR";
             this.btnCGR.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnCGR.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCGR_ItemClick);
@@ -160,6 +162,14 @@
             this.btnTKKhachHang.Name = "btnTKKhachHang";
             this.btnTKKhachHang.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnTKKhachHang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTKKhachHang_ItemClick);
+            // 
+            // btnThongKeGD
+            // 
+            this.btnThongKeGD.Caption = "Thống kê giao dịch";
+            this.btnThongKeGD.Id = 12;
+            this.btnThongKeGD.ImageOptions.SvgImage = global::NGANHANG.Properties.Resources.business_money;
+            this.btnThongKeGD.Name = "btnThongKeGD";
+            this.btnThongKeGD.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThongKeGD_ItemClick);
             // 
             // rbHeThong
             // 
@@ -224,6 +234,7 @@
             // 
             // ribbonPageGroup3
             // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnThongKeGD);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "Tài khoản";
             // 
@@ -327,5 +338,6 @@
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
         private DevExpress.XtraBars.BarButtonItem btnTaoLogin;
         private DevExpress.XtraBars.BarButtonItem btnTKKhachHang;
+        private DevExpress.XtraBars.BarButtonItem btnThongKeGD;
     }
 }

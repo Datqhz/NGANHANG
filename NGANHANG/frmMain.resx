@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="DevExpress.Data.v22.2" name="DevExpress.Data.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="btnChuyenTien.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnCGR.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIyLjIsIFZlcnNpb249MjIuMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -324,7 +324,7 @@
   <data name="btnTKKhachHang.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAABOdJREFUaEPtmneoHUUUh1ex94q9dxRBRVEsqCgoqBFs+UMhigWJiUGNBcUC9oJg
+        DwAACw8BkvkDpQAABOdJREFUaEPtmneoHUUUh1ex94q9dxRBRVEsqCgoqBFs+UMhigWJiUGNBcUC9oJg
         F2yoGDFRQhKV2AiJ2NAkBEkgGCFYIir23r9vdifuW/fdO/eS7Ms+/MHH3Zmd3Z2zd+acM3NvNly1NZwL
         l7WA8XA8rAwDtBd8B3+3jEkwQHfDb3AY7NgSHgSN8XipJsCS/LA1GgkacmAoFRpWhvwIU+HllvAm1Bpi
         5cfwbgt4D36FWkO+h9VDqR0aDcN7jmjIGrBhSxjUkD/hD/BkG/i9+Kyd7I/BzS3hfag15Iv8sDU6HWoN

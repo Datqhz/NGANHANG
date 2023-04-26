@@ -41,6 +41,7 @@
             this.btnTaoLogin = new DevExpress.XtraBars.BarButtonItem();
             this.btnTKKhachHang = new DevExpress.XtraBars.BarButtonItem();
             this.btnThongKeGD = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDSTaiKhoan = new DevExpress.XtraBars.BarButtonItem();
             this.rbHeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribDanhMuc = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -79,10 +80,11 @@
             this.btnThoat,
             this.btnTaoLogin,
             this.btnTKKhachHang,
-            this.btnThongKeGD});
+            this.btnThongKeGD,
+            this.btnDSTaiKhoan});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbon.MaxItemId = 13;
+            this.ribbon.MaxItemId = 14;
             this.ribbon.Name = "ribbon";
             this.ribbon.OptionsMenuMinWidth = 412;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -171,6 +173,14 @@
             this.btnThongKeGD.Name = "btnThongKeGD";
             this.btnThongKeGD.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThongKeGD_ItemClick);
             // 
+            // btnDSTaiKhoan
+            // 
+            this.btnDSTaiKhoan.Caption = "Danh sách tài khoản";
+            this.btnDSTaiKhoan.Id = 13;
+            this.btnDSTaiKhoan.ImageOptions.SvgImage = global::NGANHANG.Properties.Resources.financial;
+            this.btnDSTaiKhoan.Name = "btnDSTaiKhoan";
+            this.btnDSTaiKhoan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDSTaiKhoan_ItemClick);
+            // 
             // rbHeThong
             // 
             this.rbHeThong.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -235,6 +245,7 @@
             // ribbonPageGroup3
             // 
             this.ribbonPageGroup3.ItemLinks.Add(this.btnThongKeGD);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnDSTaiKhoan);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "Tài khoản";
             // 
@@ -339,5 +350,6 @@
         private DevExpress.XtraBars.BarButtonItem btnTaoLogin;
         private DevExpress.XtraBars.BarButtonItem btnTKKhachHang;
         private DevExpress.XtraBars.BarButtonItem btnThongKeGD;
+        private DevExpress.XtraBars.BarButtonItem btnDSTaiKhoan;
     }
 }

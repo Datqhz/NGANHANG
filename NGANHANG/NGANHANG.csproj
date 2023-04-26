@@ -97,6 +97,12 @@
     <Compile Include="frmTaoTKKH.Designer.cs">
       <DependentUpon>frmTaoTKKH.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThongKeDSTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKeDSTaiKhoan.Designer.cs">
+      <DependentUpon>frmThongKeDSTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThongKeGD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTaoTKKH.resx">
       <DependentUpon>frmTaoTKKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKeDSTaiKhoan.resx">
+      <DependentUpon>frmThongKeDSTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongKeGD.resx">
       <DependentUpon>frmThongKeGD.cs</DependentUpon>
@@ -171,6 +180,8 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="icon\account.png" />
+    <None Include="Resources\saveandclose.svg" />
+    <None Include="Resources\financial.svg" />
     <None Include="Resources\business_money.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

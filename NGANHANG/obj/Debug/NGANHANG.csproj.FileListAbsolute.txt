@@ -50,3 +50,4 @@ C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmDSK
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmChuyenGuiRut.resources
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmTaoTKKH.resources
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmThongKeGD.resources
+C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmThongKeDSTaiKhoan.resources

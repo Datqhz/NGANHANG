@@ -255,5 +255,18 @@ namespace NGANHANG
         {
             Close();
         }
+
+        private void btnHuy_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            bdsNV.CancelEdit();
+            if (btnThem.Enabled == false)
+            {
+                bdsNV.Position = vitri;
+            }
+            gcNhanVien.Enabled = true;
+            grbNhapLieu.Enabled = false;
+            btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnLamMoi.Enabled = btnDong.Enabled = true;
+            btnPhucHoi.Enabled = btnGhi.Enabled = false;
+        }
     }
 }

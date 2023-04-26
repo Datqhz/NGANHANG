@@ -126,5 +126,17 @@ namespace NGANHANG
                 f.Show();
             }
         }
+
+        private void btnDSTaiKhoan_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frmThongKeDSTaiKhoan));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmThongKeDSTaiKhoan f = new frmThongKeDSTaiKhoan();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
     }
 }

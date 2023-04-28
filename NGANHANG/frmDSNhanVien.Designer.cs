@@ -48,7 +48,7 @@
             this.btnPhucHoi = new DevExpress.XtraBars.BarButtonItem();
             this.btnLamMoi = new DevExpress.XtraBars.BarButtonItem();
             this.btnGhi = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnChuyenCT = new DevExpress.XtraBars.BarButtonItem();
             this.btnDong = new DevExpress.XtraBars.BarButtonItem();
             this.btnHuy = new DevExpress.XtraBars.BarButtonItem();
             this.bar3 = new DevExpress.XtraBars.Bar();
@@ -212,7 +212,7 @@
             this.btnDong,
             this.barButtonItem7,
             this.btnGhi,
-            this.barButtonItem1,
+            this.btnChuyenCT,
             this.btnHuy});
             this.barManager1.MainMenu = this.bar2;
             this.barManager1.MaxItemId = 13;
@@ -239,7 +239,7 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.btnPhucHoi),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnLamMoi),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnGhi),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnChuyenCT),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnDong),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnHuy)});
             this.bar2.OptionsBar.MultiLine = true;
@@ -300,13 +300,13 @@
             this.btnGhi.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnGhi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnGhi_ItemClick);
             // 
-            // barButtonItem1
+            // btnChuyenCT
             // 
-            this.barButtonItem1.Caption = "Chuyển công tác";
-            this.barButtonItem1.Id = 11;
-            this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnChuyenCT.Caption = "Chuyển công tác";
+            this.btnChuyenCT.Id = 11;
+            this.btnChuyenCT.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.btnChuyenCT.Name = "btnChuyenCT";
+            this.btnChuyenCT.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // btnDong
             // 
@@ -584,6 +584,9 @@
             // cmbPhai
             // 
             this.cmbPhai.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsNV, "PHAI", true));
+            this.cmbPhai.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.bdsNV, "PHAI", true));
+            this.cmbPhai.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.bdsNV, "PHAI", true));
+            this.cmbPhai.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.bdsNV, "PHAI", true));
             this.cmbPhai.FormattingEnabled = true;
             this.cmbPhai.Location = new System.Drawing.Point(585, 91);
             this.cmbPhai.Name = "cmbPhai";
@@ -740,7 +743,7 @@
         private DSTableAdapters.GD_CHUYENTIENTableAdapter gD_CHUYENTIENTableAdapter;
         private System.Windows.Forms.BindingSource bdsCT;
         private DevExpress.XtraBars.BarButtonItem btnGhi;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem btnChuyenCT;
         private DevExpress.XtraBars.BarButtonItem btnHuy;
     }
 }

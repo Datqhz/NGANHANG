@@ -180,6 +180,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="icon\account.png" />
+    <None Include="Resources\saveandclose2.svg" />
     <None Include="Resources\saveandclose.svg" />
     <None Include="Resources\financial.svg" />
     <None Include="Resources\business_money.svg" />

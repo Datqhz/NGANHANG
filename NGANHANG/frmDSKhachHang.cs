@@ -85,6 +85,7 @@ namespace NGANHANG
             txtMACN.Text = macn;
             btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnLamMoi.Enabled = btnPhucHoi.Enabled = false;
             btnGhi.Enabled = btnHuy.Enabled = true;
+            cmbPhai.SelectedIndex = 0;
         }
 
         private void btnSua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -139,6 +140,7 @@ namespace NGANHANG
                         MessageBox.Show("Lỗi xóa khách hàng. Vui lòng thử lại.\n" + ex.Message, "Thông báo", MessageBoxButtons.OK);
                         this.khachHangTableAdapter.Fill(this.dS.KhachHang);
                         bdsKhachHang.Position = bdsKhachHang.Find("CMND",cmnd);
+                        thongtin = "";
                         return;
                     }
                 }
@@ -176,8 +178,15 @@ namespace NGANHANG
                     txtMACN.Text = strItem[8];
                     bdsKhachHang.EndEdit();
                     bdsKhachHang.ResetCurrentItem();
-                    this.khachHangTableAdapter.Connection.ConnectionString = Program.connstr;
-                    this.khachHangTableAdapter.Update(this.dS.KhachHang);
+                    try
+                    {
+                        this.khachHangTableAdapter.Connection.ConnectionString = Program.connstr;
+                        this.khachHangTableAdapter.Update(this.dS.KhachHang);
+                    }catch(Exception ex)
+                    {
+                        MessageBox.Show("Lỗi thêm khách hàng vào cơ sở dữ liệu.\n" + ex.Message, "Thông báo", MessageBoxButtons.OK);
+                    }
+                    
                 }else
                 {
                     myStack.Push(str);
@@ -189,8 +198,15 @@ namespace NGANHANG
                 {
                     bdsKhachHang.Position =bdsKhachHang.Find("CMND", strItem[1]);
                     bdsKhachHang.RemoveCurrent();
-                    this.khachHangTableAdapter.Connection.ConnectionString = Program.connstr;
-                    this.khachHangTableAdapter.Update(this.dS.KhachHang);
+                    try
+                    {
+                        this.khachHangTableAdapter.Connection.ConnectionString = Program.connstr;
+                        this.khachHangTableAdapter.Update(this.dS.KhachHang);
+                    }catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi xóa khách hàng.\n" + ex.Message, "Thông báo", MessageBoxButtons.OK);
+                    }
+                    
                 }else
                 {
                     myStack.Push(str);
@@ -217,8 +233,15 @@ namespace NGANHANG
                     txtMACN.Text = strItem[8];
                     bdsKhachHang.EndEdit();
                     bdsKhachHang.ResetCurrentItem();
-                    this.khachHangTableAdapter.Connection.ConnectionString = Program.connstr;
-                    this.khachHangTableAdapter.Update(this.dS.KhachHang);
+                    try
+                    {
+                        this.khachHangTableAdapter.Connection.ConnectionString = Program.connstr;
+                        this.khachHangTableAdapter.Update(this.dS.KhachHang);
+                    }catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi khôi phục thông tin khách hàng gốc.\n" + ex.Message, "Thông báo", MessageBoxButtons.OK); 
+                    }
+                    
                 }
                 else
                 {
@@ -308,6 +331,7 @@ namespace NGANHANG
             }catch(Exception ex)
             {
                 MessageBox.Show("Lỗi ghi nhân viên.\n" + ex.Message, "Thông báo", MessageBoxButtons.OK);
+                thongtin = "";
                 return;
             }
             btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnLamMoi.Enabled = btnPhucHoi.Enabled = true;
@@ -367,6 +391,7 @@ namespace NGANHANG
             btnGhi.Enabled = btnPhucHoi.Enabled = false;
             grbTT.Enabled = false;
             gcKhachHang.Enabled = true;
+            thongtin = "";
         }
     }
 }

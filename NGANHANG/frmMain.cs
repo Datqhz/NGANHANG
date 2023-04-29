@@ -100,7 +100,14 @@ namespace NGANHANG
 
         private void btnTKKhachHang_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            Form frm = this.CheckExists(typeof(frmTTHTKhachHang));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmTTHTKhachHang f = new frmTTHTKhachHang();
+                f.MdiParent = this;
+                f.Show();
+            }
         }
 
         private void btnCGR_ItemClick(object sender, ItemClickEventArgs e)
@@ -138,5 +145,17 @@ namespace NGANHANG
                 f.Show();
             }
         }
-    }
+
+        private void btnTKNH_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frmTaoTKKH));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmTaoTKKH f = new frmTaoTKKH();
+                f.MdiParent = this;
+                f.Show();
+
+            }
+        }
 }

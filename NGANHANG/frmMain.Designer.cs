@@ -42,6 +42,7 @@
             this.btnTKKhachHang = new DevExpress.XtraBars.BarButtonItem();
             this.btnThongKeGD = new DevExpress.XtraBars.BarButtonItem();
             this.btnDSTaiKhoan = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTKNH = new DevExpress.XtraBars.BarButtonItem();
             this.rbHeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribDanhMuc = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -81,10 +82,11 @@
             this.btnTaoLogin,
             this.btnTKKhachHang,
             this.btnThongKeGD,
-            this.btnDSTaiKhoan});
+            this.btnDSTaiKhoan,
+            this.btnTKNH});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbon.MaxItemId = 14;
+            this.ribbon.MaxItemId = 15;
             this.ribbon.Name = "ribbon";
             this.ribbon.OptionsMenuMinWidth = 412;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -181,6 +183,14 @@
             this.btnDSTaiKhoan.Name = "btnDSTaiKhoan";
             this.btnDSTaiKhoan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDSTaiKhoan_ItemClick);
             // 
+            // btnTKNH
+            // 
+            this.btnTKNH.Caption = "Tài khoản ngân hàng";
+            this.btnTKNH.Id = 14;
+            this.btnTKNH.ImageOptions.SvgImage = global::NGANHANG.Properties.Resources.business_bank;
+            this.btnTKNH.Name = "btnTKNH";
+            this.btnTKNH.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTKNH_ItemClick);
+            // 
             // rbHeThong
             // 
             this.rbHeThong.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -214,6 +224,7 @@
             // 
             this.ribbonPageGroup4.ItemLinks.Add(this.btnDSKH);
             this.ribbonPageGroup4.ItemLinks.Add(this.btnTKKhachHang);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnTKNH);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "Khách hàng";
             // 
@@ -351,5 +362,6 @@
         private DevExpress.XtraBars.BarButtonItem btnTKKhachHang;
         private DevExpress.XtraBars.BarButtonItem btnThongKeGD;
         private DevExpress.XtraBars.BarButtonItem btnDSTaiKhoan;
+        private DevExpress.XtraBars.BarButtonItem btnTKNH;
     }
 }

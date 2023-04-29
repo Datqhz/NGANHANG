@@ -109,6 +109,12 @@
     <Compile Include="frmThongKeGD.Designer.cs">
       <DependentUpon>frmThongKeGD.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTTHTKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTTHTKhachHang.Designer.cs">
+      <DependentUpon>frmTTHTKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmTaoLogin.cs">
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongKeGD.resx">
       <DependentUpon>frmThongKeGD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTTHTKhachHang.resx">
+      <DependentUpon>frmTTHTKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -180,6 +189,16 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="icon\account.png" />
+    <None Include="Resources\business_bank.svg" />
+    <None Include="Resources\close.svg" />
+    <None Include="Resources\save.svg" />
+    <None Include="Resources\clearheaderandfooter1.svg" />
+    <None Include="Resources\resetview.svg" />
+    <None Include="Resources\gridresetcolumnwidths.svg" />
+    <None Include="Resources\actions_trash.svg" />
+    <None Include="Resources\clearheaderandfooter.svg" />
+    <None Include="Resources\actions_edit.svg" />
+    <None Include="Resources\actions_addcircled.svg" />
     <None Include="Resources\saveandclose2.svg" />
     <None Include="Resources\saveandclose.svg" />
     <None Include="Resources\financial.svg" />

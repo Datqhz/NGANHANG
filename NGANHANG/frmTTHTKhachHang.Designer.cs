@@ -46,14 +46,14 @@
             this.colSODT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMACN = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel = new System.Windows.Forms.Panel();
-            this.pncNhapLieu = new DevExpress.XtraEditors.PanelControl();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnTao = new System.Windows.Forms.Button();
-            this.btnTaoTK = new System.Windows.Forms.Button();
-            this.btnHuy = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pncNhapLieu = new DevExpress.XtraEditors.PanelControl();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnTaoTK = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbsChuaTK)).BeginInit();
@@ -69,7 +69,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1376, 62);
             this.panel1.TabIndex = 0;
@@ -217,6 +217,17 @@
             this.panel.Size = new System.Drawing.Size(1376, 60);
             this.panel.TabIndex = 3;
             // 
+            // btnTao
+            // 
+            this.btnTao.BackColor = System.Drawing.Color.White;
+            this.btnTao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTao.Location = new System.Drawing.Point(27, 17);
+            this.btnTao.Name = "btnTao";
+            this.btnTao.Size = new System.Drawing.Size(137, 28);
+            this.btnTao.TabIndex = 0;
+            this.btnTao.Text = "Tạo tài khoản";
+            this.btnTao.UseVisualStyleBackColor = false;
+            // 
             // pncNhapLieu
             // 
             this.pncNhapLieu.Controls.Add(this.textBox2);
@@ -231,58 +242,12 @@
             this.pncNhapLieu.Size = new System.Drawing.Size(1376, 226);
             this.pncNhapLieu.TabIndex = 4;
             // 
-            // label2
+            // textBox2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(481, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "label2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(484, 96);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "label3";
-            // 
-            // btnTao
-            // 
-            this.btnTao.BackColor = System.Drawing.Color.White;
-            this.btnTao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTao.Location = new System.Drawing.Point(27, 17);
-            this.btnTao.Name = "btnTao";
-            this.btnTao.Size = new System.Drawing.Size(137, 28);
-            this.btnTao.TabIndex = 0;
-            this.btnTao.Text = "Tạo tài khoản";
-            this.btnTao.UseVisualStyleBackColor = false;
-            // 
-            // btnTaoTK
-            // 
-            this.btnTaoTK.BackColor = System.Drawing.Color.White;
-            this.btnTaoTK.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaoTK.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnTaoTK.Location = new System.Drawing.Point(607, 153);
-            this.btnTaoTK.Name = "btnTaoTK";
-            this.btnTaoTK.Size = new System.Drawing.Size(75, 36);
-            this.btnTaoTK.TabIndex = 2;
-            this.btnTaoTK.Text = "Tạo";
-            this.btnTaoTK.UseVisualStyleBackColor = false;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.BackColor = System.Drawing.Color.White;
-            this.btnHuy.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnHuy.Location = new System.Drawing.Point(714, 153);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 36);
-            this.btnHuy.TabIndex = 3;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = false;
+            this.textBox2.Location = new System.Drawing.Point(586, 96);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(258, 23);
+            this.textBox2.TabIndex = 5;
             // 
             // textBox1
             // 
@@ -291,12 +256,49 @@
             this.textBox1.Size = new System.Drawing.Size(258, 23);
             this.textBox1.TabIndex = 4;
             // 
-            // textBox2
+            // btnHuy
             // 
-            this.textBox2.Location = new System.Drawing.Point(586, 96);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(258, 23);
-            this.textBox2.TabIndex = 5;
+            this.btnHuy.BackColor = System.Drawing.Color.White;
+            this.btnHuy.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnHuy.Location = new System.Drawing.Point(723, 153);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(75, 36);
+            this.btnHuy.TabIndex = 3;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = false;
+            // 
+            // btnTaoTK
+            // 
+            this.btnTaoTK.BackColor = System.Drawing.Color.White;
+            this.btnTaoTK.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaoTK.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnTaoTK.Location = new System.Drawing.Point(614, 153);
+            this.btnTaoTK.Name = "btnTaoTK";
+            this.btnTaoTK.Size = new System.Drawing.Size(75, 36);
+            this.btnTaoTK.TabIndex = 2;
+            this.btnTaoTK.Text = "Tạo";
+            this.btnTaoTK.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(471, 97);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 18);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Mật khẩu";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(471, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(109, 18);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tên đăng nhập";
             // 
             // frmTTHTKhachHang
             // 
@@ -308,7 +310,7 @@
             this.Controls.Add(this.gcDSKH);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTTHTKhachHang";
             this.Text = "Tài khoản hệ thống khách hàng";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

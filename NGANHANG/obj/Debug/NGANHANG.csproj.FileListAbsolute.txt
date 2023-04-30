@@ -48,7 +48,6 @@ C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmDSN
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmTaoLogin.resources
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmDSKhachHang.resources
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmChuyenGuiRut.resources
-C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmTaoTKKH.resources
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmThongKeGD.resources
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmThongKeDSTaiKhoan.resources
 D:\vs 2022\NGANHANG\NGANHANG\bin\Debug\NGANHANG.exe.config
@@ -105,3 +104,4 @@ D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.csproj.CoreCompileInputs.cache
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.csproj.CopyComplete
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.exe
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.pdb
+C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmTTHTKhachHang.resources

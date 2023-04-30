@@ -48,8 +48,8 @@
             this.panel = new System.Windows.Forms.Panel();
             this.btnTao = new System.Windows.Forms.Button();
             this.pncNhapLieu = new DevExpress.XtraEditors.PanelControl();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.txtTenDN = new System.Windows.Forms.TextBox();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnTaoTK = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -227,11 +227,12 @@
             this.btnTao.TabIndex = 0;
             this.btnTao.Text = "Tạo tài khoản";
             this.btnTao.UseVisualStyleBackColor = false;
+            this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
             // 
             // pncNhapLieu
             // 
-            this.pncNhapLieu.Controls.Add(this.textBox2);
-            this.pncNhapLieu.Controls.Add(this.textBox1);
+            this.pncNhapLieu.Controls.Add(this.txtMatKhau);
+            this.pncNhapLieu.Controls.Add(this.txtTenDN);
             this.pncNhapLieu.Controls.Add(this.btnHuy);
             this.pncNhapLieu.Controls.Add(this.btnTaoTK);
             this.pncNhapLieu.Controls.Add(this.label3);
@@ -242,19 +243,19 @@
             this.pncNhapLieu.Size = new System.Drawing.Size(1376, 226);
             this.pncNhapLieu.TabIndex = 4;
             // 
-            // textBox2
+            // txtMatKhau
             // 
-            this.textBox2.Location = new System.Drawing.Point(586, 96);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(258, 23);
-            this.textBox2.TabIndex = 5;
+            this.txtMatKhau.Location = new System.Drawing.Point(586, 96);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.Size = new System.Drawing.Size(258, 23);
+            this.txtMatKhau.TabIndex = 5;
             // 
-            // textBox1
+            // txtTenDN
             // 
-            this.textBox1.Location = new System.Drawing.Point(586, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(258, 23);
-            this.textBox1.TabIndex = 4;
+            this.txtTenDN.Location = new System.Drawing.Point(586, 42);
+            this.txtTenDN.Name = "txtTenDN";
+            this.txtTenDN.Size = new System.Drawing.Size(258, 23);
+            this.txtTenDN.TabIndex = 4;
             // 
             // btnHuy
             // 
@@ -267,6 +268,7 @@
             this.btnHuy.TabIndex = 3;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnTaoTK
             // 
@@ -279,6 +281,7 @@
             this.btnTaoTK.TabIndex = 2;
             this.btnTaoTK.Text = "Tạo";
             this.btnTaoTK.UseVisualStyleBackColor = false;
+            this.btnTaoTK.Click += new System.EventHandler(this.btnTaoTK_Click);
             // 
             // label3
             // 
@@ -354,7 +357,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnHuy;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMatKhau;
+        private System.Windows.Forms.TextBox txtTenDN;
     }
 }

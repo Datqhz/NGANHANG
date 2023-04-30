@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.ChartRangeControlClient.Core;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,20 +15,27 @@ namespace NGANHANG
     public partial class frmDangNhap : Form
     {
         private SqlConnection conn_publisher = new SqlConnection();
+        private int option = 0;
         public frmDangNhap()
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
         }
 
-        private void layDSPM(String query)
+        private void layDSPM(String query1, String query2)
         {
             DataTable data = new DataTable();
             if(conn_publisher.State == ConnectionState.Closed) conn_publisher.Open();
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn_publisher); // tạo ra một adapter kết nối tới csdl với query thông qua conn_publisher
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(query1, conn_publisher); // tạo ra một adapter kết nối tới csdl với query thông qua conn_publisher
             dataAdapter.Fill(data);// đổ data lấy được vào datatable tương ứng với các row và các column có tên tương ứng trong csdl
             conn_publisher.Close();
             Program.bds_dspm.DataSource = data;
+            DataTable data1 = new DataTable();
+            if (conn_publisher.State == ConnectionState.Closed) conn_publisher.Open();
+            SqlDataAdapter dataAdapter1 = new SqlDataAdapter(query2, conn_publisher); // tạo ra một adapter kết nối tới csdl với query thông qua conn_publisher
+            dataAdapter1.Fill(data1);// đổ data lấy được vào datatable tương ứng với các row và các column có tên tương ứng trong csdl
+            conn_publisher.Close();
+            Program.bds_pmtc.DataSource = data1;
             cmbChiNhanh.DataSource = Program.bds_dspm;
             cmbChiNhanh.DisplayMember = "TENCN"; cmbChiNhanh.ValueMember= "TENSERVER";
 
@@ -87,7 +95,15 @@ namespace NGANHANG
             Program.mChiNhanh = cmbChiNhanh.SelectedIndex;
             Program.mloginDN = Program.mlogin;
             Program.passwordDN = Program.password;
-            String strLenh = "EXEC SP_Lay_Thong_Tin_NV_Tu_Login '" + Program.mlogin + "'";
+            String strLenh = "";
+            if(option == 0)
+            {
+                strLenh = "EXEC SP_Lay_Thong_Tin_NV_Tu_Login '" + Program.mlogin + "'";
+            }else
+            {
+                strLenh = "EXEC SP_Lay_Thong_Tin_KH_Tu_Login '" + Program.mlogin + "'";
+            }
+            
 
             Program.myReader = Program.ExecSqlDataReader(strLenh); ;
             if (Program.myReader == null) return;
@@ -113,8 +129,33 @@ namespace NGANHANG
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
             if (KetNoi_CSDLGoc() == 0) return;
-            layDSPM("SELECT * FROM Get_Subscribes");
+            layDSPM("SELECT * FROM Get_Subscribes", "SELECT * FROM Get_Subscribes_TC");
             cmbChiNhanh.SelectedIndex = 1; cmbChiNhanh.SelectedIndex = 0;
+        }
+
+        private void robKH_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton radio = sender as RadioButton;
+            if (radio.Checked)
+            {
+                Console.WriteLine((radio.Text.Trim() == "Khách hàng"));
+                if (radio.Text.Trim() == "Khách hàng")
+                {
+                    option = 1;
+                    pnlChiNhanh.Visible = false;
+                    Program.servername = ((DataRowView)Program.bds_pmtc.Current).Row[1].ToString();
+                    Console.WriteLine("Server: " + ((DataRowView)Program.bds_pmtc.Current).Row[1].ToString());
+                }
+                else
+                {
+                    option = 0;
+                    pnlChiNhanh.Visible = true;
+                    cmbChiNhanh.SelectedIndex = 1;
+                    cmbChiNhanh.SelectedIndex = 0;
+
+                }
+            }
+            Console.WriteLine(Program.servername);
         }
     }
 }

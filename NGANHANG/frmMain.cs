@@ -148,7 +148,7 @@ namespace NGANHANG
 
         private void btnTKNH_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form frm = this.CheckExists(typeof(frmTaoTKKH));
+            /*Form frm = this.CheckExists(typeof(frmTaoTKKH));
             if (frm != null) frm.Activate();
             else
             {
@@ -156,7 +156,7 @@ namespace NGANHANG
                 f.MdiParent = this;
                 f.Show();
 
-            }
+            }*/
         }
     }
 }

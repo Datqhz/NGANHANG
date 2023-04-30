@@ -202,7 +202,6 @@ namespace NGANHANG
         private void cmbChiNhanh_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbChiNhanh.SelectedIndex.ToString() == "System.Data.DataRowView")
-
                 return;
             Program.servername = cmbChiNhanh.SelectedIndex.ToString();
 

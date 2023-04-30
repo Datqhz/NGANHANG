@@ -37,7 +37,14 @@
             this.cmbChiNhanh = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.robNV = new System.Windows.Forms.RadioButton();
+            this.robKH = new System.Windows.Forms.RadioButton();
+            this.pnlChiNhanh = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.pnlChiNhanh.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -103,7 +110,7 @@
             // 
             this.cmbChiNhanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbChiNhanh.FormattingEnabled = true;
-            this.cmbChiNhanh.Location = new System.Drawing.Point(251, 54);
+            this.cmbChiNhanh.Location = new System.Drawing.Point(159, 41);
             this.cmbChiNhanh.Name = "cmbChiNhanh";
             this.cmbChiNhanh.Size = new System.Drawing.Size(426, 26);
             this.cmbChiNhanh.TabIndex = 2;
@@ -113,7 +120,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(119, 54);
+            this.label1.Location = new System.Drawing.Point(20, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 21);
             this.label1.TabIndex = 3;
@@ -131,14 +138,66 @@
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(758, 58);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(132, 16);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Đăng nhập với vai trò";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.robKH);
+            this.panel1.Controls.Add(this.robNV);
+            this.panel1.Location = new System.Drawing.Point(745, 93);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(185, 121);
+            this.panel1.TabIndex = 6;
+            // 
+            // robNV
+            // 
+            this.robNV.AutoSize = true;
+            this.robNV.Location = new System.Drawing.Point(16, 25);
+            this.robNV.Name = "robNV";
+            this.robNV.Size = new System.Drawing.Size(88, 20);
+            this.robNV.TabIndex = 0;
+            this.robNV.TabStop = true;
+            this.robNV.Text = "Nhân viên";
+            this.robNV.UseVisualStyleBackColor = true;
+            this.robNV.CheckedChanged += new System.EventHandler(this.robKH_CheckedChanged);
+            // 
+            // robKH
+            // 
+            this.robKH.AutoSize = true;
+            this.robKH.Location = new System.Drawing.Point(16, 69);
+            this.robKH.Name = "robKH";
+            this.robKH.Size = new System.Drawing.Size(98, 20);
+            this.robKH.TabIndex = 1;
+            this.robKH.TabStop = true;
+            this.robKH.Text = "Khách hàng";
+            this.robKH.UseVisualStyleBackColor = true;
+            this.robKH.CheckedChanged += new System.EventHandler(this.robKH_CheckedChanged);
+            // 
+            // pnlChiNhanh
+            // 
+            this.pnlChiNhanh.Controls.Add(this.cmbChiNhanh);
+            this.pnlChiNhanh.Controls.Add(this.label1);
+            this.pnlChiNhanh.Location = new System.Drawing.Point(92, 12);
+            this.pnlChiNhanh.Name = "pnlChiNhanh";
+            this.pnlChiNhanh.Size = new System.Drawing.Size(620, 100);
+            this.pnlChiNhanh.TabIndex = 7;
+            // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 477);
+            this.ClientSize = new System.Drawing.Size(1003, 733);
+            this.Controls.Add(this.pnlChiNhanh);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cmbChiNhanh);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmDangNhap";
@@ -146,6 +205,10 @@
             this.Load += new System.EventHandler(this.frmDangNhap_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.pnlChiNhanh.ResumeLayout(false);
+            this.pnlChiNhanh.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,5 +225,10 @@
         public System.Windows.Forms.TextBox txtMatKhau;
         public System.Windows.Forms.TextBox txtTenDN;
         public System.Windows.Forms.ComboBox cmbChiNhanh;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RadioButton robKH;
+        private System.Windows.Forms.RadioButton robNV;
+        private System.Windows.Forms.Panel pnlChiNhanh;
     }
 }

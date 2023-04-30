@@ -16,7 +16,7 @@ namespace NGANHANG
         public form()
         {
             InitializeComponent();
-            
+
         }
 
         private Form CheckExists(Type ftype)
@@ -30,7 +30,7 @@ namespace NGANHANG
         private void btnDangXuat_ItemClick(object sender, ItemClickEventArgs e)
         {
             DialogResult choice = MessageBox.Show("Bạn có thực sự muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(choice == DialogResult.Yes)
+            if (choice == DialogResult.Yes)
             {
                 Program.mChiNhanh = 0;
                 Program.mloginDN = "";
@@ -42,23 +42,23 @@ namespace NGANHANG
                 {
                     f.Close();
                 }
-                    
+
             }
         }
 
 
         private void btnDangNhap_ItemClick(object sender, ItemClickEventArgs e)
         {
-            
-                Form frm = this.CheckExists(typeof(frmDangNhap));
-                if (frm != null) frm.Activate();
-                else
-                {
-                    frmDangNhap f = new frmDangNhap();
-                    f.MdiParent = this;
-                    f.Show();
-                }
-            
+
+            Form frm = this.CheckExists(typeof(frmDangNhap));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmDangNhap f = new frmDangNhap();
+                f.MdiParent = this;
+                f.Show();
+            }
+
 
         }
 
@@ -158,4 +158,5 @@ namespace NGANHANG
 
             }
         }
+    }
 }

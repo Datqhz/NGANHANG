@@ -124,11 +124,11 @@ namespace NGANHANG
 
         private void btnThongKeGD_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form frm = this.CheckExists(typeof(frmThongKeGD));
+            Form frm = this.CheckExists(typeof(Frpt_ThongKeGD));
             if (frm != null) frm.Activate();
             else
             {
-                frmThongKeGD f = new frmThongKeGD();
+                Frpt_ThongKeGD f = new Frpt_ThongKeGD();
                 f.MdiParent = this;
                 f.Show();
             }
@@ -136,11 +136,11 @@ namespace NGANHANG
 
         private void btnDSTaiKhoan_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form frm = this.CheckExists(typeof(frmThongKeDSTaiKhoan));
+            Form frm = this.CheckExists(typeof(Frpt_DSTaiKhoan));
             if (frm != null) frm.Activate();
             else
             {
-                frmThongKeDSTaiKhoan f = new frmThongKeDSTaiKhoan();
+                Frpt_DSTaiKhoan f = new Frpt_DSTaiKhoan();
                 f.MdiParent = this;
                 f.Show();
             }
@@ -148,15 +148,27 @@ namespace NGANHANG
 
         private void btnTKNH_ItemClick(object sender, ItemClickEventArgs e)
         {
-            /*Form frm = this.CheckExists(typeof(frmTaoTKKH));
+            Form frm = this.CheckExists(typeof(frmTKNH));
             if (frm != null) frm.Activate();
             else
             {
-                frmTaoTKKH f = new frmTaoTKKH();
+                frmTKNH f = new frmTKNH();
                 f.MdiParent = this;
                 f.Show();
 
-            }*/
+            }
+        }
+
+        private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FrptDSKH));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FrptDSKH f = new FrptDSKH();
+                f.MdiParent = this;
+                f.Show();
+            }
         }
     }
 }

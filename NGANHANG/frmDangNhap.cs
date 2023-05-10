@@ -138,7 +138,6 @@ namespace NGANHANG
             RadioButton radio = sender as RadioButton;
             if (radio.Checked)
             {
-                Console.WriteLine((radio.Text.Trim() == "Khách hàng"));
                 if (radio.Text.Trim() == "Khách hàng")
                 {
                     option = 1;

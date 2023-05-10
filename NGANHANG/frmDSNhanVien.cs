@@ -257,7 +257,7 @@ namespace NGANHANG
                             + txtSDT.Text.Trim() + ";"
                             + txtMaCN.Text.Trim() + ";" + ckbTrangThaiXoa.Checked.ToString();
                         
-                        manv = ((DataRowView)bdsNV[bdsNV.Position])["MACN"].ToString();
+                        manv = ((DataRowView)bdsNV[bdsNV.Position])["MANV"].ToString();
                         bdsNV.RemoveCurrent();
                         this.nhanVienTableAdapter.Connection.ConnectionString = Program.connstr;
                         this.nhanVienTableAdapter.Update(this.DS.NhanVien);

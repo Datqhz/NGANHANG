@@ -35,6 +35,7 @@ namespace NGANHANG
 
         public static BindingSource bds_dspm = new BindingSource(); // giu ds phan manh khi dang nhap
         public static BindingSource bds_pmtc = new BindingSource();
+        public static BindingSource bds_dspm_cct = new BindingSource();
         public static form frmChinh = new form();
         //public static frmDangNhap frmDN = new frmDangNhap();
 

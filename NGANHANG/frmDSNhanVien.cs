@@ -21,6 +21,7 @@ namespace NGANHANG
         private Stack myStack = new Stack();
         private string thongtin = "";
         //private String manv = "";
+    
         public frmDSNhanVien()
         {
             InitializeComponent();
@@ -87,7 +88,7 @@ namespace NGANHANG
             grbNhapLieu.Enabled = true;
             bdsNV.AddNew();
             txtMaCN.Text = macn;
-            btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled  = btnLamMoi.Enabled = btnDong.Enabled = btnPhucHoi.Enabled = btnChuyenCT.Enabled = false;
+            btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnLamMoi.Enabled = btnDong.Enabled = btnPhucHoi.Enabled = btnChuyenCT.Enabled = false;
             btnHuy.Enabled = btnGhi.Enabled = true;
             gcNhanVien.Enabled = false;
             chucnang = 1;
@@ -216,7 +217,7 @@ namespace NGANHANG
             thongtin += txtMaNV.Text.Trim() + ";" +
                     txtHo.Text.Trim()
                     + ";" + txtTen.Text.Trim() + ";"
-                    + txtCMND.Text.Trim()+ ";"
+                    + txtCMND.Text.Trim() + ";"
                     + txtDiaChi.Text.Trim() + ";"
                     + cmbPhai.Text.Trim() + ";"
                     + txtSDT.Text.Trim() + ";"
@@ -229,7 +230,8 @@ namespace NGANHANG
             try
             {
                 this.nhanVienTableAdapter.Fill(this.DS.NhanVien);
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Lỗi reload: " + ex.Message, "Lỗi", MessageBoxButtons.OK);
                 return;
@@ -239,12 +241,13 @@ namespace NGANHANG
         private void btnXoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             String manv = "";
-            if(bdsGR.Count > 0 || bdsCT.Count > 0)
+            if (bdsGR.Count > 0 || bdsCT.Count > 0)
             {
                 MessageBox.Show("Không thể xóa nhân viên này vì đã lập giao dịch");
-            }else
+            }
+            else
             {
-                if(MessageBox.Show("Bạn có thực sự muốn xóa nhân viên này?", "Xác nhận", MessageBoxButtons.OK) == DialogResult.OK)
+                if (MessageBox.Show("Bạn có thực sự muốn xóa nhân viên này?", "Xác nhận", MessageBoxButtons.OK) == DialogResult.OK)
                 {
                     try
                     {
@@ -256,14 +259,14 @@ namespace NGANHANG
                             + cmbPhai.Text.Trim() + ";"
                             + txtSDT.Text.Trim() + ";"
                             + txtMaCN.Text.Trim() + ";" + ckbTrangThaiXoa.Checked.ToString();
-                        
+
                         manv = ((DataRowView)bdsNV[bdsNV.Position])["MANV"].ToString();
                         bdsNV.RemoveCurrent();
                         this.nhanVienTableAdapter.Connection.ConnectionString = Program.connstr;
                         this.nhanVienTableAdapter.Update(this.DS.NhanVien);
                         myStack.Push("delete;" + thongtin);
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         MessageBox.Show("Lỗi xóa nhân viên. Vui lòng thử lại.\n" + ex.Message, "Thông báo", MessageBoxButtons.OK);
                         this.nhanVienTableAdapter.Fill(this.DS.NhanVien);
@@ -287,7 +290,8 @@ namespace NGANHANG
                 MessageBox.Show("Vui lòng nhập mã nhân viên!", "Thông báo", MessageBoxButtons.OK);
                 txtMaNV.Focus();
                 return;
-            }else if(txtHo.Text.Trim() == "")
+            }
+            else if (txtHo.Text.Trim() == "")
             {
                 MessageBox.Show("Vui lòng nhập họ!", "Thông báo", MessageBoxButtons.OK);
                 txtHo.Focus();
@@ -331,7 +335,8 @@ namespace NGANHANG
                         stackstr = "add;" + txtMaNV.Text.Trim();
                         Program.myReader.Close();
                     }
-                }else
+                }
+                else
                 {
                     stackstr = "edit;" + thongtin;
                 }
@@ -345,7 +350,7 @@ namespace NGANHANG
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi ghi nhân viên.\n" + ex.Message,"Thông báo", MessageBoxButtons.OK);
+                MessageBox.Show("Lỗi ghi nhân viên.\n" + ex.Message, "Thông báo", MessageBoxButtons.OK);
                 thongtin = "";
                 return;
             }
@@ -357,16 +362,17 @@ namespace NGANHANG
 
         private void cmbChiNhanh_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if((cmbChiNhanh.SelectedValue.ToString() == "System.Data.DataRowView")) //Kiểm tra xem cmb đã có các phân mảnh hay chưa
+            if ((cmbChiNhanh.SelectedValue.ToString() == "System.Data.DataRowView")) //Kiểm tra xem cmb đã có các phân mảnh hay chưa
             {
                 return;
             }
             Program.servername = cmbChiNhanh.SelectedValue.ToString();
-            if(cmbChiNhanh.SelectedIndex!= Program.mChiNhanh)
+            if (cmbChiNhanh.SelectedIndex != Program.mChiNhanh)
             {
                 Program.mlogin = Program.remotelogin;
                 Program.password = Program.remotepassword;
-            }else
+            }
+            else
             {
                 Program.mlogin = Program.mloginDN;
                 Program.password = Program.passwordDN;
@@ -375,7 +381,8 @@ namespace NGANHANG
             if (Program.KetNoi() == 0)
             {
                 MessageBox.Show("Lỗi kết nối về chi nhánh mới.", "Thông báo", MessageBoxButtons.OK);
-            }else
+            }
+            else
             {
                 this.nhanVienTableAdapter.Connection.ConnectionString = Program.connstr;
                 this.nhanVienTableAdapter.Fill(this.DS.NhanVien);
@@ -406,6 +413,21 @@ namespace NGANHANG
             btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnLamMoi.Enabled = btnDong.Enabled = btnPhucHoi.Enabled = btnChuyenCT.Enabled = true;
             btnHuy.Enabled = btnGhi.Enabled = false;
             thongtin = "";
+        }
+
+        private void btnChuyenCT_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            //vitri = bdsNV.Position;
+            String MANV = ((DataRowView)bdsNV[bdsNV.Position])["MANV"].ToString();
+            if (MANV.Trim().Equals(Program.username.Trim())){
+                MessageBox.Show("Không thể chuyển bạn sang chi nhánh khác.", "Thông báo", MessageBoxButtons.OK);
+                    return;
+            }
+
+            frmChuyencongtac frmChuyencongtac = new frmChuyencongtac();
+            frmChuyencongtac.set_MANVCU(MANV);
+            frmChuyencongtac.ShowDialog();
+
         }
     }
 }

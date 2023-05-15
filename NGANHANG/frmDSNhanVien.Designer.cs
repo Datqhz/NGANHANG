@@ -460,7 +460,7 @@
             this.gcNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.gcNhanVien.MenuManager = this.barManager1;
             this.gcNhanVien.Name = "gcNhanVien";
-            this.gcNhanVien.Size = new System.Drawing.Size(1248, 451);
+            this.gcNhanVien.Size = new System.Drawing.Size(1248, 335);
             this.gcNhanVien.TabIndex = 6;
             this.gcNhanVien.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -583,10 +583,10 @@
             this.grbNhapLieu.Controls.Add(mANVLabel);
             this.grbNhapLieu.Controls.Add(this.txtMaNV);
             this.grbNhapLieu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbNhapLieu.Location = new System.Drawing.Point(0, 571);
+            this.grbNhapLieu.Location = new System.Drawing.Point(0, 455);
             this.grbNhapLieu.Margin = new System.Windows.Forms.Padding(4);
             this.grbNhapLieu.Name = "grbNhapLieu";
-            this.grbNhapLieu.Size = new System.Drawing.Size(1248, 276);
+            this.grbNhapLieu.Size = new System.Drawing.Size(1248, 392);
             this.grbNhapLieu.TabIndex = 7;
             // 
             // ckbTrangThaiXoa

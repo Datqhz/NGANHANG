@@ -407,5 +407,10 @@ namespace NGANHANG
             btnHuy.Enabled = btnGhi.Enabled = false;
             thongtin = "";
         }
+
+        private void btnChuyenCT_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
     }
 }

@@ -1,0 +1,260 @@
+﻿++Solution 'NGANHANG' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:NGANHANG.sln
+++NGANHANG
+i:{00000000-0000-0000-0000-000000000000}:NGANHANG
+++Properties
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\properties\
+++References
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++icon
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\icon\
+++Resources
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\
+++App.config
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\app.config
+++DS.xsd
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\ds.xsd
+++frmChuyencongtac.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmchuyencongtac.cs
+++frmChuyenGuiRut.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmchuyenguirut.cs
+++frmDangNhap.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmdangnhap.cs
+++frmDSKhachHang.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmdskhachhang.cs
+++frmDSNhanVien.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmdsnhanvien.cs
+++frmMain.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmmain.cs
+++frmTaoLogin.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmtaologin.cs
+++frmThongKeDSTaiKhoan.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmthongkedstaikhoan.cs
+++frmThongKeGD.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmthongkegd.cs
+++frmTKNH.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmtknh.cs
+++frmTTHTKhachHang.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmtthtkhachhang.cs
+++Frpt_DSTaiKhoan.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frpt_dstaikhoan.cs
+++Frpt_ThongKeGD.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frpt_thongkegd.cs
+++FrptDSKH.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frptdskh.cs
+++Program.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\program.cs
+++XtraReport_DSKhachHang.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\xtrareport_dskhachhang.cs
+++XtraReport_DSTaiKhoan.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\xtrareport_dstaikhoan.cs
+++XtraReport_ThongKeGD.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\xtrareport_thongkegd.cs
+++AssemblyInfo.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\properties\assemblyinfo.cs
+++licenses.licx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\properties\licenses.licx
+++Resources.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\properties\resources.resx
+++Settings.settings
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\properties\settings.settings
+++DevExpress.BonusSkins.v22.2
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.Charts.v22.2.Core
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.CodeParser.v22.2
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.Data.Desktop.v22.2
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.Data.v22.2
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.DataAccess.v22.2
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.Drawing.v22.2
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.Office.v22.2.Core
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.Pdf.v22.2.Core
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.PivotGrid.v22.2.Core
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.Printing.v22.2.Core
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.RichEdit.v22.2.Core
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.RichEdit.v22.2.Export
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.Sparkline.v22.2.Core
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.Utils.v22.2
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.Utils.v22.2.UI
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.Xpo.v22.2
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.XtraBars.v22.2
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.XtraCharts.v22.2
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.XtraEditors.v22.2
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.XtraGauges.v22.2.Core
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.XtraGrid.v22.2
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.XtraLayout.v22.2
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.XtraPrinting.v22.2
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.XtraReports.v22.2
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++DevExpress.XtraReports.v22.2.Extensions
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++Microsoft.CSharp
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++System
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++System.Core
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++System.Data
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++System.Data.DataSetExtensions
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++System.Deployment
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++System.Drawing
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++System.Windows.Forms
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++System.Xml
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++System.Xml.Linq
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:
+++account.png
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\icon\account.png
+++actions_addcircled.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\actions_addcircled.svg
+++actions_addcircled1.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\actions_addcircled1.svg
+++actions_edit.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\actions_edit.svg
+++actions_edit1.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\actions_edit1.svg
+++actions_trash.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\actions_trash.svg
+++actions_trash1.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\actions_trash1.svg
+++bo_employee.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\bo_employee.svg
+++business_bank.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\business_bank.svg
+++business_money.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\business_money.svg
+++clearheaderandfooter.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\clearheaderandfooter.svg
+++clearheaderandfooter1.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\clearheaderandfooter1.svg
+++clearheaderandfooter2.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\clearheaderandfooter2.svg
+++close.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\close.svg
+++close1.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\close1.svg
+++financial.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\financial.svg
+++gridresetcolumnwidths.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\gridresetcolumnwidths.svg
+++resetlayoutoptions.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\resetlayoutoptions.svg
+++resetview.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\resetview.svg
+++resetview1.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\resetview1.svg
+++save.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\save.svg
+++save1.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\save1.svg
+++saveandclose.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\saveandclose.svg
+++saveandclose1.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\saveandclose1.svg
+++saveandclose2.svg
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\resources\saveandclose2.svg
+++DS.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\ds.designer.cs
+++DS.xsc
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\ds.xsc
+++DS.xss
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\ds.xss
+++frmChuyencongtac.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmchuyencongtac.designer.cs
+++frmChuyencongtac.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmchuyencongtac.resx
+++frmChuyenGuiRut.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmchuyenguirut.designer.cs
+++frmChuyenGuiRut.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmchuyenguirut.resx
+++frmDangNhap.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmdangnhap.designer.cs
+++frmDangNhap.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmdangnhap.resx
+++frmDSKhachHang.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmdskhachhang.designer.cs
+++frmDSKhachHang.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmdskhachhang.resx
+++frmDSNhanVien.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmdsnhanvien.designer.cs
+++frmDSNhanVien.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmdsnhanvien.resx
+++frmMain.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmmain.designer.cs
+++frmMain.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmmain.resx
+++frmTaoLogin.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmtaologin.designer.cs
+++frmTaoLogin.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmtaologin.resx
+++frmThongKeDSTaiKhoan.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmthongkedstaikhoan.designer.cs
+++frmThongKeDSTaiKhoan.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmthongkedstaikhoan.resx
+++frmThongKeGD.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmthongkegd.designer.cs
+++frmThongKeGD.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmthongkegd.resx
+++frmTKNH.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmtknh.designer.cs
+++frmTKNH.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmtknh.resx
+++frmTTHTKhachHang.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmtthtkhachhang.designer.cs
+++frmTTHTKhachHang.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frmtthtkhachhang.resx
+++Frpt_DSTaiKhoan.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frpt_dstaikhoan.designer.cs
+++Frpt_DSTaiKhoan.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frpt_dstaikhoan.resx
+++Frpt_ThongKeGD.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frpt_thongkegd.designer.cs
+++Frpt_ThongKeGD.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frpt_thongkegd.resx
+++FrptDSKH.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frptdskh.designer.cs
+++FrptDSKH.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\frptdskh.resx
+++XtraReport_DSKhachHang.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\xtrareport_dskhachhang.designer.cs
+++XtraReport_DSKhachHang.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\xtrareport_dskhachhang.resx
+++XtraReport_DSTaiKhoan.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\xtrareport_dstaikhoan.designer.cs
+++XtraReport_DSTaiKhoan.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\xtrareport_dstaikhoan.resx
+++XtraReport_ThongKeGD.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\xtrareport_thongkegd.designer.cs
+++XtraReport_ThongKeGD.resx
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\xtrareport_thongkegd.resx
+++Resources.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\properties\resources.designer.cs
+++Settings.Designer.cs
+i:{0b57ea89-cc8d-4fa7-8c3c-70afb0e9cb32}:d:\vs 2022\nganhang\nganhang\properties\settings.designer.cs

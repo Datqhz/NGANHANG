@@ -39,8 +39,8 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.robNV = new System.Windows.Forms.RadioButton();
             this.robKH = new System.Windows.Forms.RadioButton();
+            this.robNV = new System.Windows.Forms.RadioButton();
             this.pnlChiNhanh = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -156,18 +156,6 @@
             this.panel1.Size = new System.Drawing.Size(185, 121);
             this.panel1.TabIndex = 6;
             // 
-            // robNV
-            // 
-            this.robNV.AutoSize = true;
-            this.robNV.Location = new System.Drawing.Point(16, 25);
-            this.robNV.Name = "robNV";
-            this.robNV.Size = new System.Drawing.Size(88, 20);
-            this.robNV.TabIndex = 0;
-            this.robNV.TabStop = true;
-            this.robNV.Text = "Nhân viên";
-            this.robNV.UseVisualStyleBackColor = true;
-            this.robNV.CheckedChanged += new System.EventHandler(this.robKH_CheckedChanged);
-            // 
             // robKH
             // 
             this.robKH.AutoSize = true;
@@ -179,6 +167,18 @@
             this.robKH.Text = "Khách hàng";
             this.robKH.UseVisualStyleBackColor = true;
             this.robKH.CheckedChanged += new System.EventHandler(this.robKH_CheckedChanged);
+            // 
+            // robNV
+            // 
+            this.robNV.AutoSize = true;
+            this.robNV.Location = new System.Drawing.Point(16, 25);
+            this.robNV.Name = "robNV";
+            this.robNV.Size = new System.Drawing.Size(88, 20);
+            this.robNV.TabIndex = 0;
+            this.robNV.TabStop = true;
+            this.robNV.Text = "Nhân viên";
+            this.robNV.UseVisualStyleBackColor = true;
+            this.robNV.CheckedChanged += new System.EventHandler(this.robKH_CheckedChanged);
             // 
             // pnlChiNhanh
             // 
@@ -193,7 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1003, 733);
+            this.ClientSize = new System.Drawing.Size(1013, 475);
             this.Controls.Add(this.pnlChiNhanh);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);

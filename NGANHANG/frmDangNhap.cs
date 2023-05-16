@@ -40,7 +40,7 @@ namespace NGANHANG
             cmbChiNhanh.DisplayMember = "TENCN"; cmbChiNhanh.ValueMember= "TENSERVER";
 
         }
-
+        
         private int KetNoi_CSDLGoc()
         {
             if(conn_publisher != null && conn_publisher.State == ConnectionState.Open)
@@ -123,7 +123,14 @@ namespace NGANHANG
             Program.frmChinh.MANV.Text = "MÃ NV: " + Program.username;
             Program.frmChinh.HOTEN.Text = "HỌ TÊN: " + Program.mHoten;
             Program.frmChinh.NHOM.Text = "NHÓM: " + Program.mGroup;
-            /////
+            DataTable data2 = new DataTable();
+            if (Program.conn.State == ConnectionState.Closed) Program.conn.Open();
+            SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT MACN, TENCN FROM LINK2.NGANHANG.DBO.ChiNhanh WHERE MACN NOT IN(SELECT MACN FROM ChiNhanh)", Program.conn); // tạo ra một adapter kết nối tới csdl với query thông qua conn_publisher
+            dataAdapter.Fill(data2);// đổ data lấy được vào datatable tương ứng với các row và các column có tên tương ứng trong csdl
+            conn_publisher.Close();
+
+            Program.bds_dspm_cct.DataSource = data2;
+            Console.WriteLine(((DataRowView)Program.bds_dspm_cct.Current).Row[1].ToString());
             Close();
         }
 

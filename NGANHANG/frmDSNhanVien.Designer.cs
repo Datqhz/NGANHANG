@@ -360,7 +360,7 @@
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 847);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 745);
             this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Size = new System.Drawing.Size(1248, 20);
             // 
@@ -370,7 +370,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 51);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 796);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 694);
             // 
             // barDockControlRight
             // 
@@ -378,7 +378,7 @@
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(1248, 51);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 796);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 694);
             // 
             // barButtonItem7
             // 
@@ -460,7 +460,7 @@
             this.gcNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.gcNhanVien.MenuManager = this.barManager1;
             this.gcNhanVien.Name = "gcNhanVien";
-            this.gcNhanVien.Size = new System.Drawing.Size(1248, 335);
+            this.gcNhanVien.Size = new System.Drawing.Size(1248, 336);
             this.gcNhanVien.TabIndex = 6;
             this.gcNhanVien.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -583,10 +583,10 @@
             this.grbNhapLieu.Controls.Add(mANVLabel);
             this.grbNhapLieu.Controls.Add(this.txtMaNV);
             this.grbNhapLieu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbNhapLieu.Location = new System.Drawing.Point(0, 455);
+            this.grbNhapLieu.Location = new System.Drawing.Point(0, 456);
             this.grbNhapLieu.Margin = new System.Windows.Forms.Padding(4);
             this.grbNhapLieu.Name = "grbNhapLieu";
-            this.grbNhapLieu.Size = new System.Drawing.Size(1248, 392);
+            this.grbNhapLieu.Size = new System.Drawing.Size(1248, 289);
             this.grbNhapLieu.TabIndex = 7;
             // 
             // ckbTrangThaiXoa
@@ -690,7 +690,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1248, 867);
+            this.ClientSize = new System.Drawing.Size(1248, 765);
             this.Controls.Add(this.grbNhapLieu);
             this.Controls.Add(this.gcNhanVien);
             this.Controls.Add(this.panelControl1);

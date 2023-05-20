@@ -139,6 +139,7 @@ namespace NGANHANG
             if (KetNoi_CSDLGoc() == 0) return;
             layDSPM("SELECT * FROM Get_Subscribes", "SELECT * FROM Get_Subscribes_TC");
             cmbChiNhanh.SelectedIndex = 1; cmbChiNhanh.SelectedIndex = 0;
+            robNV.Checked = true;
         }
 
         private void robKH_CheckedChanged(object sender, EventArgs e)

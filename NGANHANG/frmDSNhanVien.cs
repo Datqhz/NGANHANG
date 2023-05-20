@@ -37,6 +37,7 @@ namespace NGANHANG
 
         private void frmDSNhanVien_Load(object sender, EventArgs e)
         {
+            
 
             DS.EnforceConstraints = false;// Tải về nhưng không kiểm tra ràng buộc
             this.nhanVienTableAdapter.Connection.ConnectionString = Program.connstr;
@@ -45,8 +46,10 @@ namespace NGANHANG
             // TODO: This line of code loads data into the 'dS.NhanVien' table. You can move, or remove it, as needed.
             this.nhanVienTableAdapter.Fill(this.DS.NhanVien);
             // TODO: This line of code loads data into the 'DS.GD_CHUYENTIEN' table. You can move, or remove it, as needed.
+            this.gD_CHUYENTIENTableAdapter.Connection.ConnectionString = Program.connstr;
             this.gD_CHUYENTIENTableAdapter.Fill(this.DS.GD_CHUYENTIEN);
             // TODO: This line of code loads data into the 'DS.GD_GOIRUT' table. You can move, or remove it, as needed.
+            this.gD_GOIRUTTableAdapter.Connection.ConnectionString = Program.connstr;
             this.gD_GOIRUTTableAdapter.Fill(this.DS.GD_GOIRUT);
 
             macn = ((DataRowView)bdsNV[0])["MACN"].ToString();

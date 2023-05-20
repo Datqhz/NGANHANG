@@ -76,8 +76,9 @@ namespace NGANHANG
                     Program.myReader = Program.ExecSqlDataReader("SELECT SUSER_SNAME(sid),uid FROM sys.sysusers WHERE name = \'"+ MANVCU+"\'");
                     Program.myReader.Read();
                     String lgin = Program.myReader.GetString(0);
-                    Console.WriteLine("1" +Program.myReader.GetInt32(1));
-                    int uid = Program.myReader.GetInt32(1);
+                    Console.WriteLine("1, login : " + Program.myReader.GetString(0));
+                    Console.WriteLine("test, uid : " + Convert.ToInt32(Program.myReader["uid"]));
+                    int uid = Convert.ToInt32(Program.myReader["uid"]);
                     Console.WriteLine("2");
                     Program.myReader.Close();
                     Program.myReader = Program.ExecSqlDataReader("SELECT NAME FROM sys.sysusers WHERE uid =(SELECT groupuid from sys.sysmembers WHERE memberuid = "+uid+")");
@@ -86,18 +87,23 @@ namespace NGANHANG
                     Console.WriteLine("3");
                     Program.myReader.Close();
                     Console.WriteLine(cmbCN.SelectedValue.ToString());
+                    Program.mlogin = Program.remotelogin;
+                    Program.password = Program.remotepassword;
+                    Program.KetNoi();
                     Program.ExecSqlNonQuery("EXEC SP_CHUYENCONGTAC_SONGSONG \'" + MANVCU + "\', \'" + txtMaNVM.Text.Trim() + "\', \'" + cmbCN.SelectedValue.ToString() + "\'");
                     
                     Console.WriteLine("4");
                     Program.ExecSqlNonQuery("EXEC LINK1.NGANHANG.DBO.SP_TAOLOGIN \'"+lgin+"\',\'"+ txtMK.Text.Trim()+"\',\'"+ txtMaNVM.Text.Trim() + "\',\'"+role+"\' ");
                     Console.WriteLine("5");
-                    MessageBox.Show("Chuyển nhân viên thành công!", "Thông báo", MessageBoxButtons.OK);
+                    //MessageBox.Show("Chuyển nhân viên thành công!", "Thông báo", MessageBoxButtons.OK);
                   
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Phát sinh lỗi trong quá trình thực hiện. Vui lòng thử lại.\n" + ex.Message, "Thông báo", MessageBoxButtons.OK);
+                    Program.myReader.Close();
                     return;
+                    
                 }
             }
             

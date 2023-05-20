@@ -104,12 +104,12 @@
             // 
             this.gcNV.DataSource = this.bdsNVChua_co_login;
             this.gcNV.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gcNV.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gcNV.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
             this.gcNV.Location = new System.Drawing.Point(0, 20);
             this.gcNV.MainView = this.gridView1;
-            this.gcNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gcNV.Margin = new System.Windows.Forms.Padding(4);
             this.gcNV.Name = "gcNV";
-            this.gcNV.Size = new System.Drawing.Size(1253, 454);
+            this.gcNV.Size = new System.Drawing.Size(1345, 284);
             this.gcNV.TabIndex = 2;
             this.gcNV.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -129,6 +129,7 @@
             this.gridView1.DetailHeight = 437;
             this.gridView1.GridControl = this.gcNV;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
             // 
             // colMANV
             // 
@@ -236,7 +237,7 @@
             // txtTenDN
             // 
             this.txtTenDN.Location = new System.Drawing.Point(635, 95);
-            this.txtTenDN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenDN.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.Size = new System.Drawing.Size(349, 23);
             this.txtTenDN.TabIndex = 5;
@@ -244,7 +245,7 @@
             // txtMatKhau
             // 
             this.txtMatKhau.Location = new System.Drawing.Point(635, 168);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(349, 23);
             this.txtMatKhau.TabIndex = 6;
@@ -256,7 +257,7 @@
             this.btnTaoTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaoTK.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnTaoTK.Location = new System.Drawing.Point(651, 234);
-            this.btnTaoTK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTaoTK.Margin = new System.Windows.Forms.Padding(4);
             this.btnTaoTK.Name = "btnTaoTK";
             this.btnTaoTK.Size = new System.Drawing.Size(108, 49);
             this.btnTaoTK.TabIndex = 7;
@@ -273,10 +274,10 @@
             this.grbTTDN.Controls.Add(this.btnTaoTK);
             this.grbTTDN.Controls.Add(this.txtMatKhau);
             this.grbTTDN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbTTDN.Location = new System.Drawing.Point(0, 474);
+            this.grbTTDN.Location = new System.Drawing.Point(0, 304);
             this.grbTTDN.Margin = new System.Windows.Forms.Padding(8, 4, 8, 4);
             this.grbTTDN.Name = "grbTTDN";
-            this.grbTTDN.Size = new System.Drawing.Size(1253, 251);
+            this.grbTTDN.Size = new System.Drawing.Size(1345, 421);
             this.grbTTDN.TabIndex = 8;
             // 
             // btnClose
@@ -285,7 +286,7 @@
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnClose.Location = new System.Drawing.Point(858, 234);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(94, 49);
             this.btnClose.TabIndex = 10;
@@ -310,16 +311,16 @@
             // 
             this.panel1.Controls.Add(this.btnTao);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 474);
+            this.panel1.Location = new System.Drawing.Point(0, 304);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1253, 38);
+            this.panel1.Size = new System.Drawing.Size(1345, 38);
             this.panel1.TabIndex = 10;
             // 
             // frmTaoLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1253, 725);
+            this.ClientSize = new System.Drawing.Size(1345, 725);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.grbTTDN);
             this.Controls.Add(this.gcNV);

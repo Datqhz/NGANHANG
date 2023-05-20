@@ -355,7 +355,7 @@
             // stackPanel1
             // 
             this.stackPanel1.Location = new System.Drawing.Point(1602, 270);
-            this.stackPanel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.stackPanel1.Margin = new System.Windows.Forms.Padding(5);
             this.stackPanel1.Name = "stackPanel1";
             this.stackPanel1.Size = new System.Drawing.Size(12, 12);
             this.stackPanel1.TabIndex = 4;
@@ -367,7 +367,7 @@
             this.panelControl1.Controls.Add(this.label1);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 51);
-            this.panelControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(5);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(1220, 81);
             this.panelControl1.TabIndex = 5;
@@ -377,7 +377,7 @@
             this.cmbChiNhanh.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbChiNhanh.FormattingEnabled = true;
             this.cmbChiNhanh.Location = new System.Drawing.Point(186, 25);
-            this.cmbChiNhanh.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.cmbChiNhanh.Margin = new System.Windows.Forms.Padding(5);
             this.cmbChiNhanh.Name = "cmbChiNhanh";
             this.cmbChiNhanh.Size = new System.Drawing.Size(410, 26);
             this.cmbChiNhanh.TabIndex = 1;
@@ -427,10 +427,10 @@
             // 
             this.gcKhachHang.DataSource = this.bdsKhachHang;
             this.gcKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gcKhachHang.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.gcKhachHang.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5);
             this.gcKhachHang.Location = new System.Drawing.Point(0, 132);
             this.gcKhachHang.MainView = this.gridView1;
-            this.gcKhachHang.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.gcKhachHang.Margin = new System.Windows.Forms.Padding(5);
             this.gcKhachHang.MenuManager = this.barManager1;
             this.gcKhachHang.Name = "gcKhachHang";
             this.gcKhachHang.Size = new System.Drawing.Size(1220, 331);
@@ -452,6 +452,7 @@
             this.gridView1.DetailHeight = 546;
             this.gridView1.GridControl = this.gcKhachHang;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
             // 
             // colCMND
             // 
@@ -545,7 +546,7 @@
             this.grbTT.Controls.Add(this.txtCMND);
             this.grbTT.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grbTT.Location = new System.Drawing.Point(0, 463);
-            this.grbTT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.grbTT.Margin = new System.Windows.Forms.Padding(5);
             this.grbTT.Name = "grbTT";
             this.grbTT.Size = new System.Drawing.Size(1220, 307);
             this.grbTT.TabIndex = 13;
@@ -554,7 +555,7 @@
             // 
             this.txtMACN.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsKhachHang, "MACN", true));
             this.txtMACN.Location = new System.Drawing.Point(1422, 150);
-            this.txtMACN.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtMACN.Margin = new System.Windows.Forms.Padding(5);
             this.txtMACN.Name = "txtMACN";
             this.txtMACN.ReadOnly = true;
             this.txtMACN.Size = new System.Drawing.Size(154, 23);
@@ -564,7 +565,7 @@
             // 
             this.txtSDT.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsKhachHang, "SODT", true));
             this.txtSDT.Location = new System.Drawing.Point(1422, 58);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(5);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(154, 23);
             this.txtSDT.TabIndex = 13;
@@ -574,7 +575,7 @@
             this.dteNgayCap.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bdsKhachHang, "NGAYCAP", true));
             this.dteNgayCap.EditValue = null;
             this.dteNgayCap.Location = new System.Drawing.Point(864, 249);
-            this.dteNgayCap.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dteNgayCap.Margin = new System.Windows.Forms.Padding(5);
             this.dteNgayCap.MenuManager = this.barManager1;
             this.dteNgayCap.Name = "dteNgayCap";
             this.dteNgayCap.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -591,7 +592,7 @@
             this.cmbPhai.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.bdsKhachHang, "PHAI", true));
             this.cmbPhai.FormattingEnabled = true;
             this.cmbPhai.Location = new System.Drawing.Point(864, 158);
-            this.cmbPhai.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.cmbPhai.Margin = new System.Windows.Forms.Padding(5);
             this.cmbPhai.Name = "cmbPhai";
             this.cmbPhai.Size = new System.Drawing.Size(186, 24);
             this.cmbPhai.TabIndex = 9;
@@ -600,7 +601,7 @@
             // 
             this.txtDiaChi.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsKhachHang, "DIACHI", true));
             this.txtDiaChi.Location = new System.Drawing.Point(864, 58);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(5);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(432, 23);
             this.txtDiaChi.TabIndex = 7;
@@ -609,7 +610,7 @@
             // 
             this.txtTen.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsKhachHang, "TEN", true));
             this.txtTen.Location = new System.Drawing.Point(372, 248);
-            this.txtTen.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(5);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(154, 23);
             this.txtTen.TabIndex = 5;
@@ -618,7 +619,7 @@
             // 
             this.txtHo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsKhachHang, "HO", true));
             this.txtHo.Location = new System.Drawing.Point(375, 156);
-            this.txtHo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtHo.Margin = new System.Windows.Forms.Padding(5);
             this.txtHo.Name = "txtHo";
             this.txtHo.Size = new System.Drawing.Size(272, 23);
             this.txtHo.TabIndex = 3;
@@ -627,7 +628,7 @@
             // 
             this.txtCMND.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsKhachHang, "CMND", true));
             this.txtCMND.Location = new System.Drawing.Point(375, 60);
-            this.txtCMND.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtCMND.Margin = new System.Windows.Forms.Padding(5);
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(272, 23);
             this.txtCMND.TabIndex = 1;

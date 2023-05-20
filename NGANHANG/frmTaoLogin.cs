@@ -63,7 +63,7 @@ namespace NGANHANG
                 string manv = ((DataRowView)bdsNVChua_co_login[bdsNVChua_co_login.Position])["MANV"].ToString();
                 //Console.WriteLine("exec [dbo].[SP_TAOLOGIN] '" + txtTenDN.Text.Trim() + "', '" + txtMatKhau.Text.Trim() + "', '" + manv.Trim() + "', '" + Program.mGroup + "'");
                 Program.ExecSqlDataReader("exec [dbo].[SP_TAOLOGIN] '" + txtTenDN.Text.Trim() + "', '" + txtMatKhau.Text.Trim() + "', '" + manv.Trim() + "', '" + Program.mGroup + "'");
-                MessageBox.Show("Tạo login cho nhân viên có mã \"" + manv + "\" thành công!!", "Thông báo", MessageBoxButtons.OK);
+                MessageBox.Show("Tạo login cho nhân viên có mã \"" + manv.Trim() + "\" thành công!!", "Thông báo", MessageBoxButtons.OK);
                 txtTenDN.Text = "";
                 txtMatKhau.Text = "";
                 grbTTDN.Enabled = false;

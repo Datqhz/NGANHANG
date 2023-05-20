@@ -65,7 +65,6 @@
             this.nhanVienTableAdapter = new NGANHANG.DSTableAdapters.NhanVienTableAdapter();
             this.tableAdapterManager = new NGANHANG.DSTableAdapters.TableAdapterManager();
             this.gD_CHUYENTIENTableAdapter = new NGANHANG.DSTableAdapters.GD_CHUYENTIENTableAdapter();
-            this.gD_GOIRUTTableAdapter = new NGANHANG.DSTableAdapters.GD_GOIRUTTableAdapter();
             this.gcNhanVien = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMANV = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -87,8 +86,9 @@
             this.txtTen = new System.Windows.Forms.TextBox();
             this.txtHo = new System.Windows.Forms.TextBox();
             this.txtMaNV = new System.Windows.Forms.TextBox();
-            this.bdsGR = new System.Windows.Forms.BindingSource(this.components);
             this.bdsCT = new System.Windows.Forms.BindingSource(this.components);
+            this.bdsGR = new System.Windows.Forms.BindingSource(this.components);
+            this.gD_GOIRUTTableAdapter = new NGANHANG.DSTableAdapters.GD_GOIRUTTableAdapter();
             mANVLabel = new System.Windows.Forms.Label();
             hOLabel = new System.Windows.Forms.Label();
             tENLabel = new System.Windows.Forms.Label();
@@ -107,8 +107,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grbNhapLieu)).BeginInit();
             this.grbNhapLieu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bdsGR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsCT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsGR)).BeginInit();
             this.SuspendLayout();
             // 
             // mANVLabel
@@ -360,7 +360,7 @@
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 745);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 756);
             this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Size = new System.Drawing.Size(1248, 20);
             // 
@@ -370,7 +370,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 51);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 694);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 705);
             // 
             // barDockControlRight
             // 
@@ -378,7 +378,7 @@
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(1248, 51);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 694);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 705);
             // 
             // barButtonItem7
             // 
@@ -436,7 +436,6 @@
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.ChiNhanhTableAdapter = null;
             this.tableAdapterManager.GD_CHUYENTIENTableAdapter = this.gD_CHUYENTIENTableAdapter;
-            this.tableAdapterManager.GD_GOIRUTTableAdapter = this.gD_GOIRUTTableAdapter;
             this.tableAdapterManager.KhachHangTableAdapter = null;
             this.tableAdapterManager.NhanVienTableAdapter = this.nhanVienTableAdapter;
             this.tableAdapterManager.TaiKhoanTableAdapter = null;
@@ -445,10 +444,6 @@
             // gD_CHUYENTIENTableAdapter
             // 
             this.gD_CHUYENTIENTableAdapter.ClearBeforeFill = true;
-            // 
-            // gD_GOIRUTTableAdapter
-            // 
-            this.gD_GOIRUTTableAdapter.ClearBeforeFill = true;
             // 
             // gcNhanVien
             // 
@@ -460,7 +455,7 @@
             this.gcNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.gcNhanVien.MenuManager = this.barManager1;
             this.gcNhanVien.Name = "gcNhanVien";
-            this.gcNhanVien.Size = new System.Drawing.Size(1248, 336);
+            this.gcNhanVien.Size = new System.Drawing.Size(1248, 254);
             this.gcNhanVien.TabIndex = 6;
             this.gcNhanVien.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -480,6 +475,7 @@
             this.gridView1.DetailHeight = 437;
             this.gridView1.GridControl = this.gcNhanVien;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
             // 
             // colMANV
             // 
@@ -583,10 +579,10 @@
             this.grbNhapLieu.Controls.Add(mANVLabel);
             this.grbNhapLieu.Controls.Add(this.txtMaNV);
             this.grbNhapLieu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbNhapLieu.Location = new System.Drawing.Point(0, 456);
+            this.grbNhapLieu.Location = new System.Drawing.Point(0, 374);
             this.grbNhapLieu.Margin = new System.Windows.Forms.Padding(4);
             this.grbNhapLieu.Name = "grbNhapLieu";
-            this.grbNhapLieu.Size = new System.Drawing.Size(1248, 289);
+            this.grbNhapLieu.Size = new System.Drawing.Size(1248, 382);
             this.grbNhapLieu.TabIndex = 7;
             // 
             // ckbTrangThaiXoa
@@ -676,21 +672,25 @@
             this.txtMaNV.Size = new System.Drawing.Size(168, 23);
             this.txtMaNV.TabIndex = 1;
             // 
-            // bdsGR
-            // 
-            this.bdsGR.DataMember = "FK_GD_GOIRUT_NhanVien";
-            this.bdsGR.DataSource = this.bdsNV;
-            // 
             // bdsCT
             // 
             this.bdsCT.DataMember = "FK_GD_CHUYENTIEN_NhanVien";
             this.bdsCT.DataSource = this.bdsNV;
             // 
+            // bdsGR
+            // 
+            this.bdsGR.DataMember = "FK_GD_GOIRUT_NhanVien";
+            this.bdsGR.DataSource = this.bdsNV;
+            // 
+            // gD_GOIRUTTableAdapter
+            // 
+            this.gD_GOIRUTTableAdapter.ClearBeforeFill = true;
+            // 
             // frmDSNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1248, 765);
+            this.ClientSize = new System.Drawing.Size(1248, 776);
             this.Controls.Add(this.grbNhapLieu);
             this.Controls.Add(this.gcNhanVien);
             this.Controls.Add(this.panelControl1);
@@ -712,8 +712,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.grbNhapLieu)).EndInit();
             this.grbNhapLieu.ResumeLayout(false);
             this.grbNhapLieu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bdsGR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsCT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsGR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -764,12 +764,12 @@
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.CheckBox ckbTrangThaiXoa;
         private System.Windows.Forms.ComboBox cmbPhai;
-        private DSTableAdapters.GD_GOIRUTTableAdapter gD_GOIRUTTableAdapter;
-        private System.Windows.Forms.BindingSource bdsGR;
         private DSTableAdapters.GD_CHUYENTIENTableAdapter gD_CHUYENTIENTableAdapter;
         private System.Windows.Forms.BindingSource bdsCT;
         private DevExpress.XtraBars.BarButtonItem btnGhi;
         private DevExpress.XtraBars.BarButtonItem btnChuyenCT;
         private DevExpress.XtraBars.BarButtonItem btnHuy;
+        private System.Windows.Forms.BindingSource bdsGR;
+        private DSTableAdapters.GD_GOIRUTTableAdapter gD_GOIRUTTableAdapter;
     }
 }

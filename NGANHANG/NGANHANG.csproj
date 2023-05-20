@@ -111,12 +111,6 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmThongKeDSTaiKhoan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmThongKeDSTaiKhoan.Designer.cs">
-      <DependentUpon>frmThongKeDSTaiKhoan.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmThongKeGD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,9 +193,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTaoLogin.resx">
       <DependentUpon>frmTaoLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmThongKeDSTaiKhoan.resx">
-      <DependentUpon>frmThongKeDSTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongKeGD.resx">
       <DependentUpon>frmThongKeGD.cs</DependentUpon>

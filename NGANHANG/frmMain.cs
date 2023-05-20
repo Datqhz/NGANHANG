@@ -16,7 +16,7 @@ namespace NGANHANG
         public form()
         {
             InitializeComponent();
-
+            
         }
 
         private Form CheckExists(Type ftype)

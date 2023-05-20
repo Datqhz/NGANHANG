@@ -97,6 +97,56 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtSoDu.Properties)).BeginInit();
             this.SuspendLayout();
             // 
+            // nGAYTAOTKLabel
+            // 
+            nGAYTAOTKLabel.AutoSize = true;
+            nGAYTAOTKLabel.Location = new System.Drawing.Point(733, 64);
+            nGAYTAOTKLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            nGAYTAOTKLabel.Name = "nGAYTAOTKLabel";
+            nGAYTAOTKLabel.Size = new System.Drawing.Size(83, 16);
+            nGAYTAOTKLabel.TabIndex = 8;
+            nGAYTAOTKLabel.Text = "NGAYTAOTK:";
+            // 
+            // mACNLabel
+            // 
+            mACNLabel.AutoSize = true;
+            mACNLabel.Location = new System.Drawing.Point(733, 139);
+            mACNLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            mACNLabel.Name = "mACNLabel";
+            mACNLabel.Size = new System.Drawing.Size(46, 16);
+            mACNLabel.TabIndex = 6;
+            mACNLabel.Text = "MACN:";
+            // 
+            // sODULabel
+            // 
+            sODULabel.AutoSize = true;
+            sODULabel.Location = new System.Drawing.Point(151, 206);
+            sODULabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            sODULabel.Name = "sODULabel";
+            sODULabel.Size = new System.Drawing.Size(45, 16);
+            sODULabel.TabIndex = 4;
+            sODULabel.Text = "SODU:";
+            // 
+            // cMNDLabel
+            // 
+            cMNDLabel.AutoSize = true;
+            cMNDLabel.Location = new System.Drawing.Point(150, 135);
+            cMNDLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            cMNDLabel.Name = "cMNDLabel";
+            cMNDLabel.Size = new System.Drawing.Size(46, 16);
+            cMNDLabel.TabIndex = 2;
+            cMNDLabel.Text = "CMND:";
+            // 
+            // sOTKLabel
+            // 
+            sOTKLabel.AutoSize = true;
+            sOTKLabel.Location = new System.Drawing.Point(152, 65);
+            sOTKLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            sOTKLabel.Name = "sOTKLabel";
+            sOTKLabel.Size = new System.Drawing.Size(44, 16);
+            sOTKLabel.TabIndex = 0;
+            sOTKLabel.Text = "SOTK:";
+            // 
             // barManager1
             // 
             this.barManager1.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
@@ -261,7 +311,7 @@
             this.panelControl2.Controls.Add(this.label2);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl2.Location = new System.Drawing.Point(0, 51);
-            this.panelControl2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panelControl2.Margin = new System.Windows.Forms.Padding(6);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(1166, 72);
             this.panelControl2.TabIndex = 5;
@@ -329,10 +379,10 @@
             // 
             this.gcTaiKhoan.DataSource = this.bdsTK;
             this.gcTaiKhoan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gcTaiKhoan.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.gcTaiKhoan.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5);
             this.gcTaiKhoan.Location = new System.Drawing.Point(0, 123);
             this.gcTaiKhoan.MainView = this.gridView1;
-            this.gcTaiKhoan.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.gcTaiKhoan.Margin = new System.Windows.Forms.Padding(5);
             this.gcTaiKhoan.MenuManager = this.barManager1;
             this.gcTaiKhoan.Name = "gcTaiKhoan";
             this.gcTaiKhoan.Size = new System.Drawing.Size(1166, 329);
@@ -351,6 +401,7 @@
             this.gridView1.DetailHeight = 437;
             this.gridView1.GridControl = this.gcTaiKhoan;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
             // 
             // colSOTK
             // 
@@ -412,7 +463,7 @@
             this.pnlNhapLieu.Controls.Add(this.txtSTK);
             this.pnlNhapLieu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlNhapLieu.Location = new System.Drawing.Point(0, 452);
-            this.pnlNhapLieu.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.pnlNhapLieu.Margin = new System.Windows.Forms.Padding(8);
             this.pnlNhapLieu.Name = "pnlNhapLieu";
             this.pnlNhapLieu.Size = new System.Drawing.Size(1166, 247);
             this.pnlNhapLieu.TabIndex = 16;
@@ -421,7 +472,7 @@
             // 
             this.btnCheck.BackColor = System.Drawing.Color.White;
             this.btnCheck.Location = new System.Drawing.Point(525, 135);
-            this.btnCheck.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCheck.Margin = new System.Windows.Forms.Padding(6);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(99, 23);
             this.btnCheck.TabIndex = 10;
@@ -429,23 +480,13 @@
             this.btnCheck.UseVisualStyleBackColor = false;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click_1);
             // 
-            // nGAYTAOTKLabel
-            // 
-            nGAYTAOTKLabel.AutoSize = true;
-            nGAYTAOTKLabel.Location = new System.Drawing.Point(733, 64);
-            nGAYTAOTKLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            nGAYTAOTKLabel.Name = "nGAYTAOTKLabel";
-            nGAYTAOTKLabel.Size = new System.Drawing.Size(83, 16);
-            nGAYTAOTKLabel.TabIndex = 8;
-            nGAYTAOTKLabel.Text = "NGAYTAOTK:";
-            // 
             // dteNgayTao
             // 
             this.dteNgayTao.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bdsTK, "NGAYTAOTK", true));
             this.dteNgayTao.EditValue = null;
             this.dteNgayTao.Enabled = false;
             this.dteNgayTao.Location = new System.Drawing.Point(848, 62);
-            this.dteNgayTao.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.dteNgayTao.Margin = new System.Windows.Forms.Padding(8);
             this.dteNgayTao.MenuManager = this.barManager1;
             this.dteNgayTao.Name = "dteNgayTao";
             this.dteNgayTao.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -455,80 +496,40 @@
             this.dteNgayTao.Size = new System.Drawing.Size(178, 22);
             this.dteNgayTao.TabIndex = 9;
             // 
-            // mACNLabel
-            // 
-            mACNLabel.AutoSize = true;
-            mACNLabel.Location = new System.Drawing.Point(733, 139);
-            mACNLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            mACNLabel.Name = "mACNLabel";
-            mACNLabel.Size = new System.Drawing.Size(46, 16);
-            mACNLabel.TabIndex = 6;
-            mACNLabel.Text = "MACN:";
-            // 
             // txtMaCN
             // 
             this.txtMaCN.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsTK, "MACN", true));
             this.txtMaCN.Location = new System.Drawing.Point(848, 136);
-            this.txtMaCN.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtMaCN.Margin = new System.Windows.Forms.Padding(6);
             this.txtMaCN.Name = "txtMaCN";
             this.txtMaCN.ReadOnly = true;
             this.txtMaCN.Size = new System.Drawing.Size(105, 23);
             this.txtMaCN.TabIndex = 7;
             // 
-            // sODULabel
-            // 
-            sODULabel.AutoSize = true;
-            sODULabel.Location = new System.Drawing.Point(151, 206);
-            sODULabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            sODULabel.Name = "sODULabel";
-            sODULabel.Size = new System.Drawing.Size(45, 16);
-            sODULabel.TabIndex = 4;
-            sODULabel.Text = "SODU:";
-            // 
             // txtSoDu
             // 
             this.txtSoDu.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bdsTK, "SODU", true));
             this.txtSoDu.Location = new System.Drawing.Point(285, 200);
-            this.txtSoDu.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.txtSoDu.Margin = new System.Windows.Forms.Padding(8);
             this.txtSoDu.MenuManager = this.barManager1;
             this.txtSoDu.Name = "txtSoDu";
             this.txtSoDu.Size = new System.Drawing.Size(214, 22);
             this.txtSoDu.TabIndex = 5;
             // 
-            // cMNDLabel
-            // 
-            cMNDLabel.AutoSize = true;
-            cMNDLabel.Location = new System.Drawing.Point(150, 135);
-            cMNDLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            cMNDLabel.Name = "cMNDLabel";
-            cMNDLabel.Size = new System.Drawing.Size(46, 16);
-            cMNDLabel.TabIndex = 2;
-            cMNDLabel.Text = "CMND:";
-            // 
             // txtCMND
             // 
             this.txtCMND.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsTK, "CMND", true));
             this.txtCMND.Location = new System.Drawing.Point(285, 135);
-            this.txtCMND.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtCMND.Margin = new System.Windows.Forms.Padding(6);
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(214, 23);
             this.txtCMND.TabIndex = 3;
-            // 
-            // sOTKLabel
-            // 
-            sOTKLabel.AutoSize = true;
-            sOTKLabel.Location = new System.Drawing.Point(152, 65);
-            sOTKLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            sOTKLabel.Name = "sOTKLabel";
-            sOTKLabel.Size = new System.Drawing.Size(44, 16);
-            sOTKLabel.TabIndex = 0;
-            sOTKLabel.Text = "SOTK:";
             // 
             // txtSTK
             // 
             this.txtSTK.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsTK, "SOTK", true));
             this.txtSTK.Location = new System.Drawing.Point(285, 61);
-            this.txtSTK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtSTK.Margin = new System.Windows.Forms.Padding(6);
             this.txtSTK.Name = "txtSTK";
             this.txtSTK.Size = new System.Drawing.Size(214, 23);
             this.txtSTK.TabIndex = 1;

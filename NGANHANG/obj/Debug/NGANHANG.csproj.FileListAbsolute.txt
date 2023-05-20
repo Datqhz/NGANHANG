@@ -49,7 +49,6 @@ C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmTao
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmDSKhachHang.resources
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmChuyenGuiRut.resources
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmThongKeGD.resources
-C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmThongKeDSTaiKhoan.resources
 D:\vs 2022\NGANHANG\NGANHANG\bin\Debug\NGANHANG.exe.config
 D:\vs 2022\NGANHANG\NGANHANG\bin\Debug\NGANHANG.exe
 D:\vs 2022\NGANHANG\NGANHANG\bin\Debug\NGANHANG.pdb

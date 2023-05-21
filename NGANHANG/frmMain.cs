@@ -17,7 +17,10 @@ namespace NGANHANG
         public form()
         {
             InitializeComponent();
+            ribNghiepVu.Visible = ribDanhMuc.Visible = ribBaoCao.Visible = false;
+            btnDangXuat.Enabled = btnTaoLogin.Enabled = btnThoat.Enabled = false;
             
+
         }
 
         private Form CheckExists(Type ftype)
@@ -70,33 +73,36 @@ namespace NGANHANG
             NHOM.Text = "Nhóm: " + Program.mGroup;
             //phân quyền
            
+
             if(Program.mGroup == "NGANHANG")
             {
-                ribNghiepVu.Visible = false;
+                ribDanhMuc.Visible= true;
+                ribBaoCao.Visible = true;
                 btnTKNH.Enabled = false;
                 btnTKKhachHang.Enabled = false;
-                
+                btnDangXuat.Enabled = btnTaoLogin.Enabled = btnThoat.Enabled = true;
             }
             else if(Program.mGroup == "KHACHHANG")
             {
                 btnTaoLogin.Enabled = false;
-                ribNghiepVu.Visible = false;
-                ribDanhMuc.Visible = false;
+                ribBaoCao.Visible = true;
                 // Danh sách khách hàng
                 barButtonItem2.Enabled = false;
                 btnTKNH.Enabled = false;
                 btnDSTaiKhoan.Enabled = false;
-
+                btnDangXuat.Enabled = btnThoat.Enabled = true;
             }
             else if(Program.mGroup == "CHINHANH")
             {
                 btnTaoLogin.Enabled = true;
                 ribNghiepVu.Visible = true;
                 ribDanhMuc.Visible = true;
+                ribBaoCao.Visible = true;
                 barButtonItem2.Enabled = true;
                 btnTKNH.Enabled = true;
                 btnDSTaiKhoan.Enabled = true;
                 btnTKKhachHang.Enabled = true;
+                btnDangXuat.Enabled = btnTaoLogin.Enabled = btnThoat.Enabled = true;
             }
         } 
 

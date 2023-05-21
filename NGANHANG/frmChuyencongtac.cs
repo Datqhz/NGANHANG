@@ -13,6 +13,12 @@ namespace NGANHANG
     public partial class frmChuyencongtac : Form
     {
         private string MANVCU = "";
+        private string CMND = "";
+
+        public void set_CMND(string str)
+        {
+            this.CMND = str;
+        }
         public void set_MANVCU(string str)
         {
             this.MANVCU = str;
@@ -37,7 +43,7 @@ namespace NGANHANG
             cmbCN.DisplayMember = "TENCN";
             cmbCN.ValueMember = "MACN";
             //cmbCN.SelectedIndex = Program.mChiNhanh;
-
+            cmbCN.SelectedIndex = 0;
 
         }
 
@@ -47,11 +53,6 @@ namespace NGANHANG
             {
                 MessageBox.Show("Mã nhân viên mới không được để trống", "Thông báo", MessageBoxButtons.OK);
                 txtMaNVM.Focus();
-                return;
-            }else if(txtMK.Text.Trim() == "")
-            {
-                MessageBox.Show("Mật khẩu không được để trống", "Thông báo", MessageBoxButtons.OK);
-                txtMK.Focus();
                 return;
             }
 
@@ -73,30 +74,12 @@ namespace NGANHANG
 
                 try
                 {
-                    Program.myReader = Program.ExecSqlDataReader("SELECT SUSER_SNAME(sid),uid FROM sys.sysusers WHERE name = \'"+ MANVCU+"\'");
-                    Program.myReader.Read();
-                    String lgin = Program.myReader.GetString(0);
-                    Console.WriteLine("1, login : " + Program.myReader.GetString(0));
-                    Console.WriteLine("test, uid : " + Convert.ToInt32(Program.myReader["uid"]));
-                    int uid = Convert.ToInt32(Program.myReader["uid"]);
-                    Console.WriteLine("2");
-                    Program.myReader.Close();
-                    Program.myReader = Program.ExecSqlDataReader("SELECT NAME FROM sys.sysusers WHERE uid =(SELECT groupuid from sys.sysmembers WHERE memberuid = "+uid+")");
-                    Program.myReader.Read();
-                    String role = Program.myReader.GetString(0);
-                    Console.WriteLine("3");
-                    Program.myReader.Close();
-                    Console.WriteLine(cmbCN.SelectedValue.ToString());
+                                       
                     Program.mlogin = Program.remotelogin;
                     Program.password = Program.remotepassword;
                     Program.KetNoi();
                     Program.ExecSqlNonQuery("EXEC SP_CHUYENCONGTAC_SONGSONG \'" + MANVCU + "\', \'" + txtMaNVM.Text.Trim() + "\', \'" + cmbCN.SelectedValue.ToString() + "\'");
-                    
-                    Console.WriteLine("4");
-                    Program.ExecSqlNonQuery("EXEC LINK1.NGANHANG.DBO.SP_TAOLOGIN \'"+lgin+"\',\'"+ txtMK.Text.Trim()+"\',\'"+ txtMaNVM.Text.Trim() + "\',\'"+role+"\' ");
-                    Console.WriteLine("5");
-                    //MessageBox.Show("Chuyển nhân viên thành công!", "Thông báo", MessageBoxButtons.OK);
-                  
+                                                         
                 }
                 catch (Exception ex)
                 {
@@ -110,7 +93,7 @@ namespace NGANHANG
         }
         private void cmbCN_SelectedIndexChanged(object sender, EventArgs e)
         {
-             
+            
         }
     }
 }

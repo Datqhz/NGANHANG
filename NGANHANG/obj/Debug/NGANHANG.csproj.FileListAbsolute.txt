@@ -92,7 +92,6 @@ D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmDSKhachHang.resources
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmDSNhanVien.resources
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.form.resources
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmTaoLogin.resources
-D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmThongKeDSTaiKhoan.resources
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmThongKeGD.resources
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmTTHTKhachHang.resources
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.Properties.Resources.resources

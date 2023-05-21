@@ -13,6 +13,7 @@ namespace NGANHANG
 {
     public partial class form : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        
         public form()
         {
             InitializeComponent();
@@ -61,6 +62,43 @@ namespace NGANHANG
 
 
         }
+
+        public void HienThiMenu()
+        {
+            MANV.Text = "MÃ NV: " + Program.username;
+            HOTEN.Text = "Họ tên: " + Program.mHoten.Trim('\r', '\n');
+            NHOM.Text = "Nhóm: " + Program.mGroup;
+            //phân quyền
+           
+            if(Program.mGroup == "NGANHANG")
+            {
+                ribNghiepVu.Visible = false;
+                btnTKNH.Enabled = false;
+                btnTKKhachHang.Enabled = false;
+                
+            }
+            else if(Program.mGroup == "KHACHHANG")
+            {
+                btnTaoLogin.Enabled = false;
+                ribNghiepVu.Visible = false;
+                ribDanhMuc.Visible = false;
+                // Danh sách khách hàng
+                barButtonItem2.Enabled = false;
+                btnTKNH.Enabled = false;
+                btnDSTaiKhoan.Enabled = false;
+
+            }
+            else if(Program.mGroup == "CHINHANH")
+            {
+                btnTaoLogin.Enabled = true;
+                ribNghiepVu.Visible = true;
+                ribDanhMuc.Visible = true;
+                barButtonItem2.Enabled = true;
+                btnTKNH.Enabled = true;
+                btnDSTaiKhoan.Enabled = true;
+                btnTKKhachHang.Enabled = true;
+            }
+        } 
 
         private void btnDSNV_ItemClick(object sender, ItemClickEventArgs e)
         {

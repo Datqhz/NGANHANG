@@ -16,7 +16,7 @@ namespace NGANHANG
         /// </summary>
         public static SqlConnection conn = new SqlConnection();
         public static String connstr;
-        public static String connstr_publisher = "Data Source= DESKTOP-1BJ5MCB;Initial Catalog=NGANHANG;integrated security=true";
+        public static String connstr_publisher = "Data Source= LAPTOP-5QNPG5RF;Initial Catalog=NGANHANG;integrated security=true";
         public static SqlDataReader myReader;
         public static String servername = "";
         public static String username = "";

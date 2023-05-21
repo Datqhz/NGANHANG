@@ -436,6 +436,7 @@
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.ChiNhanhTableAdapter = null;
             this.tableAdapterManager.GD_CHUYENTIENTableAdapter = this.gD_CHUYENTIENTableAdapter;
+            this.tableAdapterManager.GD_GOIRUTTableAdapter = null;
             this.tableAdapterManager.KhachHangTableAdapter = null;
             this.tableAdapterManager.NhanVienTableAdapter = this.nhanVienTableAdapter;
             this.tableAdapterManager.TaiKhoanTableAdapter = null;
@@ -724,7 +725,6 @@
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.Bar bar1;
         private DevExpress.XtraBars.Bar bar2;
-        private DevExpress.XtraBars.BarButtonItem btnThem;
         private DevExpress.XtraBars.BarButtonItem btnXoa;
         private DevExpress.XtraBars.BarButtonItem btnSua;
         private DevExpress.XtraBars.BarButtonItem btnPhucHoi;
@@ -771,5 +771,6 @@
         private DevExpress.XtraBars.BarButtonItem btnHuy;
         private System.Windows.Forms.BindingSource bdsGR;
         private DSTableAdapters.GD_GOIRUTTableAdapter gD_GOIRUTTableAdapter;
+        private DevExpress.XtraBars.BarButtonItem btnThem;
     }
 }

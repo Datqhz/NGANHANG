@@ -58,12 +58,12 @@ namespace NGANHANG
             cmbChiNhanh.SelectedIndex = Program.mChiNhanh;
             if (Program.mGroup == "NGANHANG")
             {
-                btnThem.Enabled = btnXoa.Enabled = btnSua.Enabled = false;
+                btnThem.Enabled = btnXoa.Enabled = btnSua.Enabled = btnGhi.Enabled = false;
                 cmbChiNhanh.Enabled = true;
             }
             else
             {
-                btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled;
+                btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnGhi.Enabled = true;
                 cmbChiNhanh.Enabled = false;
             }
             txtMACN.Enabled = btnPhucHoi.Enabled = btnHuy.Enabled = btnGhi.Enabled = false;

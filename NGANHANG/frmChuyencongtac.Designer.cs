@@ -37,8 +37,6 @@
             this.chiNhanhTableAdapter = new NGANHANG.DSTableAdapters.ChiNhanhTableAdapter();
             this.tableAdapterManager = new NGANHANG.DSTableAdapters.TableAdapterManager();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.txtMK = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnChuyen = new System.Windows.Forms.Button();
             this.txtMaNVM = new System.Windows.Forms.TextBox();
             this.lblMaNVM = new System.Windows.Forms.Label();
@@ -105,36 +103,18 @@
             // 
             // panelControl2
             // 
-            this.panelControl2.Controls.Add(this.txtMK);
-            this.panelControl2.Controls.Add(this.label3);
-            this.panelControl2.Controls.Add(this.btnChuyen);
-            this.panelControl2.Controls.Add(this.txtMaNVM);
             this.panelControl2.Controls.Add(this.lblMaNVM);
+            this.panelControl2.Controls.Add(this.txtMaNVM);
+            this.panelControl2.Controls.Add(this.btnChuyen);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl2.Location = new System.Drawing.Point(0, 77);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(800, 373);
             this.panelControl2.TabIndex = 3;
             // 
-            // txtMK
-            // 
-            this.txtMK.Location = new System.Drawing.Point(291, 175);
-            this.txtMK.Name = "txtMK";
-            this.txtMK.Size = new System.Drawing.Size(112, 23);
-            this.txtMK.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(203, 175);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Mật khẩu:";
-            // 
             // btnChuyen
             // 
-            this.btnChuyen.Location = new System.Drawing.Point(531, 122);
+            this.btnChuyen.Location = new System.Drawing.Point(539, 114);
             this.btnChuyen.Name = "btnChuyen";
             this.btnChuyen.Size = new System.Drawing.Size(90, 33);
             this.btnChuyen.TabIndex = 2;
@@ -144,7 +124,7 @@
             // 
             // txtMaNVM
             // 
-            this.txtMaNVM.Location = new System.Drawing.Point(291, 93);
+            this.txtMaNVM.Location = new System.Drawing.Point(353, 119);
             this.txtMaNVM.Name = "txtMaNVM";
             this.txtMaNVM.Size = new System.Drawing.Size(112, 23);
             this.txtMaNVM.TabIndex = 1;
@@ -152,7 +132,7 @@
             // lblMaNVM
             // 
             this.lblMaNVM.AutoSize = true;
-            this.lblMaNVM.Location = new System.Drawing.Point(143, 100);
+            this.lblMaNVM.Location = new System.Drawing.Point(179, 122);
             this.lblMaNVM.Name = "lblMaNVM";
             this.lblMaNVM.Size = new System.Drawing.Size(113, 16);
             this.lblMaNVM.TabIndex = 0;
@@ -190,10 +170,8 @@
         private DSTableAdapters.TableAdapterManager tableAdapterManager;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private System.Windows.Forms.Button btnChuyen;
-        private System.Windows.Forms.TextBox txtMaNVM;
-        private System.Windows.Forms.Label lblMaNVM;
-        private System.Windows.Forms.TextBox txtMK;
-        private System.Windows.Forms.Label label3;
         public System.Windows.Forms.ComboBox cmbCN;
+        private System.Windows.Forms.Label lblMaNVM;
+        private System.Windows.Forms.TextBox txtMaNVM;
     }
 }

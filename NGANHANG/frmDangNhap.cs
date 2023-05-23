@@ -119,7 +119,6 @@ namespace NGANHANG
             Program.mHoten = Program.myReader.GetString(1);
             Program.mGroup = Program.myReader.GetString(2);
             Program.myReader.Close();
-            
             DataTable data2 = new DataTable();
             if (Program.conn.State == ConnectionState.Closed) Program.conn.Open();
             SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT MACN, TENCN FROM LINK0.NGANHANG.DBO.ChiNhanh WHERE MACN NOT IN(SELECT MACN FROM ChiNhanh)", Program.conn); // tạo ra một adapter kết nối tới csdl với query thông qua conn_publisher
@@ -127,6 +126,7 @@ namespace NGANHANG
             conn_publisher.Close();
             Program.bds_dspm_cct.DataSource = data2;
             Close();
+            Program.frmChinh.HienThiMenu();
         }
 
         private void frmDangNhap_Load(object sender, EventArgs e)

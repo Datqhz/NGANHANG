@@ -123,6 +123,16 @@ namespace NGANHANG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage bo_audit_changehistory {
+            get {
+                object obj = ResourceManager.GetObject("bo_audit_changehistory", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage bo_employee {
             get {
                 object obj = ResourceManager.GetObject("bo_employee", resourceCulture);

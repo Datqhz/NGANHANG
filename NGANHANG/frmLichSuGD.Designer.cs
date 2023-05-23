@@ -1,6 +1,6 @@
 ﻿namespace NGANHANG
 {
-    partial class frmThongKeGD
+    partial class frmLichSuGD
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnXem = new System.Windows.Forms.Button();
-            this.txtSoTK = new System.Windows.Forms.TextBox();
             this.dteDenNgay = new DevExpress.XtraEditors.DateEdit();
             this.dteTuNgay = new DevExpress.XtraEditors.DateEdit();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@
             this.txtSDD = new DevExpress.XtraEditors.TextEdit();
             this.label_1 = new System.Windows.Forms.Label();
             this.label_2 = new System.Windows.Forms.Label();
+            this.cmbSTK = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dteDenNgay.Properties)).BeginInit();
@@ -75,8 +75,8 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.cmbSTK);
             this.panelControl1.Controls.Add(this.btnXem);
-            this.panelControl1.Controls.Add(this.txtSoTK);
             this.panelControl1.Controls.Add(this.dteDenNgay);
             this.panelControl1.Controls.Add(this.dteTuNgay);
             this.panelControl1.Controls.Add(this.label3);
@@ -100,14 +100,6 @@
             this.btnXem.Text = "Xem";
             this.btnXem.UseVisualStyleBackColor = false;
             this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
-            // 
-            // txtSoTK
-            // 
-            this.txtSoTK.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoTK.Location = new System.Drawing.Point(288, 31);
-            this.txtSoTK.Name = "txtSoTK";
-            this.txtSoTK.Size = new System.Drawing.Size(457, 26);
-            this.txtSoTK.TabIndex = 5;
             // 
             // dteDenNgay
             // 
@@ -307,6 +299,14 @@
             this.label_2.TabIndex = 0;
             this.label_2.Text = "Số dư ngày";
             // 
+            // cmbSTK
+            // 
+            this.cmbSTK.FormattingEnabled = true;
+            this.cmbSTK.Location = new System.Drawing.Point(288, 36);
+            this.cmbSTK.Name = "cmbSTK";
+            this.cmbSTK.Size = new System.Drawing.Size(457, 24);
+            this.cmbSTK.TabIndex = 7;
+            // 
             // frmThongKeGD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -317,6 +317,7 @@
             this.Name = "frmThongKeGD";
             this.Text = "Thống kê giao dịch";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmThongKeGD_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
@@ -339,7 +340,6 @@
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private System.Windows.Forms.Button btnXem;
-        private System.Windows.Forms.TextBox txtSoTK;
         private DevExpress.XtraEditors.DateEdit dteDenNgay;
         private DevExpress.XtraEditors.DateEdit dteTuNgay;
         private System.Windows.Forms.Label label3;
@@ -358,5 +358,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SDCuoi;
         private System.Windows.Forms.Label lblSDC;
         private System.Windows.Forms.Label lblSDD;
+        private System.Windows.Forms.ComboBox cmbSTK;
     }
 }

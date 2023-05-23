@@ -48,7 +48,6 @@ C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmDSN
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmTaoLogin.resources
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmDSKhachHang.resources
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmChuyenGuiRut.resources
-C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmThongKeGD.resources
 D:\vs 2022\NGANHANG\NGANHANG\bin\Debug\NGANHANG.exe.config
 D:\vs 2022\NGANHANG\NGANHANG\bin\Debug\NGANHANG.exe
 D:\vs 2022\NGANHANG\NGANHANG\bin\Debug\NGANHANG.pdb
@@ -92,7 +91,6 @@ D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmDSKhachHang.resources
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmDSNhanVien.resources
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.form.resources
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmTaoLogin.resources
-D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmThongKeDSTaiKhoan.resources
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmThongKeGD.resources
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmTTHTKhachHang.resources
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.Properties.Resources.resources
@@ -197,3 +195,4 @@ D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.XtraReport_DSTaiKhoan.resources
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.XtraReport_ThongKeGD.resources
 D:\vs 2022\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmChuyencongtac.resources
 C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmChuyencongtac.resources
+C:\Users\baam0\OneDrive\Documents\C#\NGANHANG\NGANHANG\obj\Debug\NGANHANG.frmLichSuGD.resources

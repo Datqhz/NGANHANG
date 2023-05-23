@@ -111,11 +111,11 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmThongKeGD.cs">
+    <Compile Include="frmLichSuGD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmThongKeGD.Designer.cs">
-      <DependentUpon>frmThongKeGD.cs</DependentUpon>
+    <Compile Include="frmLichSuGD.Designer.cs">
+      <DependentUpon>frmLichSuGD.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTKNH.cs">
       <SubType>Form</SubType>
@@ -194,8 +194,8 @@
     <EmbeddedResource Include="frmTaoLogin.resx">
       <DependentUpon>frmTaoLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmThongKeGD.resx">
-      <DependentUpon>frmThongKeGD.cs</DependentUpon>
+    <EmbeddedResource Include="frmLichSuGD.resx">
+      <DependentUpon>frmLichSuGD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTKNH.resx">
       <DependentUpon>frmTKNH.cs</DependentUpon>
@@ -257,6 +257,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="icon\account.png" />
+    <None Include="Resources\bo_audit_changehistory.svg" />
     <None Include="Resources\saveandclose1.svg" />
     <None Include="Resources\close1.svg" />
     <None Include="Resources\clearheaderandfooter2.svg" />

@@ -15,6 +15,7 @@ namespace NGANHANG
 {
     public partial class frmDSNhanVien : Form
     {
+        
         private String macn = "";
         private int vitri = 0;
         private int chucnang;
@@ -62,12 +63,12 @@ namespace NGANHANG
             btnPhucHoi.Enabled = btnGhi.Enabled = btnHuy.Enabled = grbNhapLieu.Enabled = false;
             if (Program.mGroup == "NGANHANG")
             {
-                btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = false;
+                btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnChuyenCT.Enabled = false;
                 cmbChiNhanh.Enabled = true;
             }
             else
             {
-                btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = true;
+                btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnChuyenCT.Enabled = true;
                 cmbChiNhanh.Enabled = false;
             }
 
@@ -421,6 +422,7 @@ namespace NGANHANG
         {
             //vitri = bdsNV.Position;
             String MANV = ((DataRowView)bdsNV[bdsNV.Position])["MANV"].ToString();
+            String CMND = ((DataRowView)bdsNV[bdsNV.Position])["CMND"].ToString();
             if (MANV.Trim().Equals(Program.username.Trim()))
             {
                 MessageBox.Show("Không thể chuyển bạn sang chi nhánh khác.", "Thông báo", MessageBoxButtons.OK);
@@ -429,6 +431,7 @@ namespace NGANHANG
 
             frmChuyencongtac frmChuyencongtac = new frmChuyencongtac();
             frmChuyencongtac.set_MANVCU(MANV);
+            frmChuyencongtac.set_CMND(CMND);
             frmChuyencongtac.ShowDialog();
 
         }

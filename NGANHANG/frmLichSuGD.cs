@@ -30,7 +30,7 @@ namespace NGANHANG
             {
                     try
                     {
-                        Program.myReader = Program.ExecSqlDataReader("EXEC LINK1.NGANHANG.DBO.SP_THONGKE_GD '" +cmbSTK.Text.Trim()  + "', '" + dteTuNgay.Text  + "', '"+ dteDenNgay.Text + "'");
+                        Program.myReader = Program.ExecSqlDataReader("EXEC SP_THONGKE_GD '" +cmbSTK.Text.Trim()  + "', '" + dteTuNgay.Text  + "', '"+ dteDenNgay.Text + "'");
                         while(Program.myReader.Read())
                         {                        
                             this.dgvLSGD.Rows.Add(

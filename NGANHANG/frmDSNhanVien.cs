@@ -435,5 +435,10 @@ namespace NGANHANG
             frmChuyencongtac.ShowDialog();
 
         }
+
+        private void frmDSNhanVien_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            cmbChiNhanh.SelectedIndexChanged -= cmbChiNhanh_SelectedIndexChanged;
+        }
     }
 }

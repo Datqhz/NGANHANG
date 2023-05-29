@@ -63,8 +63,6 @@
             this.DetailData3_Odd = new DevExpress.XtraReports.UI.XRControlStyle();
             this.PageInfo = new DevExpress.XtraReports.UI.XRControlStyle();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
-            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
-            this.lblSDC = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.table1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -347,32 +345,8 @@
             // 
             // ReportFooter
             // 
-            this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel2,
-            this.lblSDC});
             this.ReportFooter.HeightF = 46.66667F;
             this.ReportFooter.Name = "ReportFooter";
-            // 
-            // xrLabel2
-            // 
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(438.7653F, 10F);
-            this.xrLabel2.Multiline = true;
-            this.xrLabel2.Name = "xrLabel2";
-            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.xrLabel2.Text = "Số dư cuối:";
-            // 
-            // lblSDC
-            // 
-            this.lblSDC.LocationFloat = new DevExpress.Utils.PointFloat(538.7653F, 10F);
-            this.lblSDC.Multiline = true;
-            this.lblSDC.Name = "lblSDC";
-            this.lblSDC.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.lblSDC.SizeF = new System.Drawing.SizeF(178.2347F, 23F);
-            this.lblSDC.StylePriority.UseTextAlignment = false;
-            this.lblSDC.Text = "100000000";
-            this.lblSDC.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.lblSDC.TextFormatString = "{0:N0}";
             // 
             // XtraReport_ThongKeGD
             // 
@@ -435,8 +409,6 @@
         private DevExpress.XtraReports.UI.XRControlStyle DetailData3_Odd;
         private DevExpress.XtraReports.UI.XRControlStyle PageInfo;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
-        private DevExpress.XtraReports.UI.XRLabel lblSDC;
         public DevExpress.XtraReports.UI.XRLabel lblTitle;
     }
 }

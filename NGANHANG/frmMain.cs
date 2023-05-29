@@ -17,8 +17,7 @@ namespace NGANHANG
         public form()
         {
             InitializeComponent();
-            ribNghiepVu.Visible = ribDanhMuc.Visible = ribBaoCao.Visible = ribTienIch.Visible = false;
-            btnDangXuat.Visibility = btnTaoLogin.Visibility = btnThoat.Visibility = BarItemVisibility.Never;
+            
 
         }
 
@@ -48,6 +47,7 @@ namespace NGANHANG
                 ribTienIch.Visible = ribNghiepVu.Visible = ribDanhMuc.Visible = ribBaoCao.Visible = false;
                 btnDangNhap.Visibility = BarItemVisibility.Always;
                 btnThoat.Visibility = btnDangXuat.Visibility = btnTaoLogin.Visibility = BarItemVisibility.Never;
+                stsThongTin.Visible = false;
             }
         }
 
@@ -74,9 +74,9 @@ namespace NGANHANG
             HOTEN.Text = "Họ tên: " + Program.mHoten.Trim('\r', '\n');
             NHOM.Text = "Nhóm: " + Program.mGroup;
             //phân quyền
-           
+            stsThongTin.Visible = true;
 
-            if(Program.mGroup == "NGANHANG")
+            if (Program.mGroup == "NGANHANG")
             {
                 
                 ribDanhMuc.Visible= true;
@@ -244,6 +244,13 @@ namespace NGANHANG
                 f.MdiParent = this;
                 f.Show();
             }
+        }
+
+        private void form_Load(object sender, EventArgs e)
+        {
+            ribNghiepVu.Visible = ribDanhMuc.Visible = ribBaoCao.Visible = ribTienIch.Visible = false;
+            btnDangXuat.Visibility = btnTaoLogin.Visibility = btnThoat.Visibility = BarItemVisibility.Never;
+            stsThongTin.Visible = false;
         }
     }
 }

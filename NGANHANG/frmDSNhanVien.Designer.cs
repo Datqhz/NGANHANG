@@ -701,6 +701,7 @@
             this.Controls.Add(this.barDockControlTop);
             this.Name = "frmDSNhanVien";
             this.Text = "Danh sách nhân viên";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmDSNhanVien_FormClosed);
             this.Load += new System.EventHandler(this.frmDSNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();

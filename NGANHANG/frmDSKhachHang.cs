@@ -393,5 +393,10 @@ namespace NGANHANG
             gcKhachHang.Enabled = true;
             thongtin = "";
         }
+
+        private void frmDSKhachHang_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            cmbChiNhanh.SelectedIndexChanged -= cmbChiNhanh_SelectedIndexChanged;
+        }
     }
 }

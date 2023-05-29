@@ -79,7 +79,7 @@ namespace NGANHANG
                     Program.myReader.Close();
                     Console.WriteLine(Program.connstr);
                     XtraReport_ThongKeGD rpt = new XtraReport_ThongKeGD(txtSTK.Text.Trim(), dteFromDate.Text, dteToDate.Text);
-                    rpt.lblTitle.Text = "LỊCH SỬ GIAO DỊCH CỦA TÀI KHOẢN " + txtSTK.Text.Trim() + "\nTỪ NGÀY " + dteFromDate.Text + " ĐẾN NGÀY " + dteToDate.Text;
+                    rpt.lblTitle.Text = "LỊCH SỬ GIAO DỊCH CỦA TÀI KHOẢN " + txtSTK.Text.Trim() + " TỪ  " + dteFromDate.Text + " ĐẾN " + dteToDate.Text;
                     ReportPrintTool print = new ReportPrintTool(rpt);
                     print.ShowPreviewDialog();
 

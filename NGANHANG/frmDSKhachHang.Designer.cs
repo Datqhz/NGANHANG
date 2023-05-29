@@ -649,6 +649,7 @@
             this.Name = "frmDSKhachHang";
             this.Text = "Danh sách khách hàng";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmDSKhachHang_FormClosed);
             this.Load += new System.EventHandler(this.frmDSKhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stackPanel1)).EndInit();

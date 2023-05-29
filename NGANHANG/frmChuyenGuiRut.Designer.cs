@@ -91,6 +91,8 @@
             this.txtSoDu.Properties.Appearance.Options.UseFont = true;
             this.txtSoDu.Properties.DisplayFormat.FormatString = "n0";
             this.txtSoDu.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.txtSoDu.Properties.EditFormat.FormatString = "n0";
+            this.txtSoDu.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.txtSoDu.Properties.ReadOnly = true;
             this.txtSoDu.Size = new System.Drawing.Size(184, 24);
             this.txtSoDu.TabIndex = 3;
@@ -186,9 +188,9 @@
             this.txtSotienGui_Rut.Name = "txtSotienGui_Rut";
             this.txtSotienGui_Rut.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSotienGui_Rut.Properties.Appearance.Options.UseFont = true;
-            this.txtSotienGui_Rut.Properties.DisplayFormat.FormatString = "n0";
+            this.txtSotienGui_Rut.Properties.DisplayFormat.FormatString = "G7";
             this.txtSotienGui_Rut.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.txtSotienGui_Rut.Properties.EditFormat.FormatString = "n0";
+            this.txtSotienGui_Rut.Properties.EditFormat.FormatString = "G7";
             this.txtSotienGui_Rut.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.txtSotienGui_Rut.Size = new System.Drawing.Size(208, 24);
             this.txtSotienGui_Rut.TabIndex = 7;

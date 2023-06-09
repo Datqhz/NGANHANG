@@ -45,17 +45,31 @@ namespace NGANHANG
                 return;
             }else
             {
-                try
+                Program.myReader = Program.ExecSqlDataReader("SELECT NAME FROM LINK2.NGANHANG.SYS.SYSLOGINS WHERE NAME = N'"+txtTenDN.Text.Trim()+"'");
+                Program.myReader.Read();
+                if (Program.myReader.HasRows)
                 {
-                    Program.ExecSqlNonQuery("EXEC LINK2.NGANHANG.DBO.SP_TAOLOGIN \'" + txtTenDN.Text.Trim() + "\', \'" + txtMatKhau.Text.Trim() + "\', \'" + ((DataRowView)dbsChuaTK[dbsChuaTK.Position])["CMND"].ToString() + "\', 'KHACHHANG'");
-                    Console.WriteLine("EXEC LINK2.NGANHANG.DBO.SP_TAOLOGIN \'" + txtTenDN.Text.Trim() + "\', \'" + txtMatKhau.Text.Trim() + "\'" + ((DataRowView)dbsChuaTK[dbsChuaTK.Position])["CMND"].ToString() + "\', 'KHACHHANG'");
-                    MessageBox.Show("Tạo tài khoản thành công!!", "Thông báo", MessageBoxButtons.OK);
-                    this.TaiKhoanTableAdapter.Fill(this.dS.DSKH_CHUA_CO_TK_LOGIN);
-                }catch(Exception ex)
-                {
-                    MessageBox.Show("Tạo tài khoản thất bại!!\n" + ex.Message, "Thông báo", MessageBoxButtons.OK);
+                    MessageBox.Show("Tên đăng nhập đã tồn tại! Vui lòng ghi lại tên đăng nhập mới", "Thông báo", MessageBoxButtons.OK);
+                    txtTenDN.Focus();
+                    Program.myReader.Close();
                     return;
+                }else
+                {
+                    Program.myReader.Close();
+                    try
+                    {
+                        Program.ExecSqlNonQuery("EXEC LINK2.NGANHANG.DBO.SP_TAOLOGIN \'" + txtTenDN.Text.Trim() + "\', \'" + txtMatKhau.Text.Trim() + "\', \'" + ((DataRowView)dbsChuaTK[dbsChuaTK.Position])["CMND"].ToString() + "\', 'KHACHHANG'");
+                        MessageBox.Show("Tạo tài khoản thành công!!", "Thông báo", MessageBoxButtons.OK);
+                        this.TaiKhoanTableAdapter.Fill(this.dS.DSKH_CHUA_CO_TK_LOGIN);
+                        pncNhapLieu.Enabled = false;
+                        gcDSKH.Enabled = true;
+                    }catch(Exception ex)
+                    {
+                        MessageBox.Show("Tạo tài khoản thất bại!!\n" + ex.Message, "Thông báo", MessageBoxButtons.OK);
+                        return;
+                    }
                 }
+                
             }
             if(dbsChuaTK.Count == 0)
             {

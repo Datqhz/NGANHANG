@@ -58,23 +58,37 @@ namespace NGANHANG
                 MessageBox.Show("Mật khẩu không được để trống", "Thông báo", MessageBoxButtons.OK);
                 return;
             }
-            try
+            Program.myReader = Program.ExecSqlDataReader("SELECT NAME FROM " +
+                "SYS.SYSLOGINS WHERE NAME = N'" + txtTenDN.Text.Trim() + "'");
+            Program.myReader.Read();
+            if (Program.myReader.HasRows)
             {
-                string manv = ((DataRowView)bdsNVChua_co_login[bdsNVChua_co_login.Position])["MANV"].ToString();
-                //Console.WriteLine("exec [dbo].[SP_TAOLOGIN] '" + txtTenDN.Text.Trim() + "', '" + txtMatKhau.Text.Trim() + "', '" + manv.Trim() + "', '" + Program.mGroup + "'");
-                Program.ExecSqlDataReader("exec [dbo].[SP_TAOLOGIN] '" + txtTenDN.Text.Trim() + "', '" + txtMatKhau.Text.Trim() + "', '" + manv.Trim() + "', '" + Program.mGroup + "'");
-                MessageBox.Show("Tạo login cho nhân viên có mã \"" + manv.Trim() + "\" thành công!!", "Thông báo", MessageBoxButtons.OK);
-                txtTenDN.Text = "";
-                txtMatKhau.Text = "";
-                grbTTDN.Enabled = false;
-                gcNV.Enabled = true;
-                btnTao.Enabled = true;
-                this.NV_Chua_Co_LoginTableAdapter.Fill(this.dS.DSNV_CHUA_CO_TK_LOGIN);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Không thể tạo tài khoản.\n" + ex.Message, "", MessageBoxButtons.OK);
+                MessageBox.Show("Tên đăng nhập đã tồn tại! Vui lòng ghi lại tên đăng nhập mới", "Thông báo", MessageBoxButtons.OK);
+                txtTenDN.Focus();
+                Program.myReader.Close();
                 return;
+            }
+            else
+            {
+                try
+                {
+                    string manv = ((DataRowView)bdsNVChua_co_login[bdsNVChua_co_login.Position])["MANV"].ToString();
+                    //Console.WriteLine("exec [dbo].[SP_TAOLOGIN] '" + txtTenDN.Text.Trim() + "', '" + txtMatKhau.Text.Trim() + "', '" + manv.Trim() + "', '" + Program.mGroup + "'");
+                    Program.ExecSqlDataReader("exec [dbo].[SP_TAOLOGIN] '" + txtTenDN.Text.Trim() + "', '" + txtMatKhau.Text.Trim() + "', '" + manv.Trim() + "', '" + Program.mGroup + "'");
+                    MessageBox.Show("Tạo login cho nhân viên có mã \"" + manv.Trim() + "\" thành công!!", "Thông báo", MessageBoxButtons.OK);
+                    txtTenDN.Text = "";
+                    txtMatKhau.Text = "";
+                    grbTTDN.Enabled = false;
+                    gcNV.Enabled = true;
+                    btnTao.Enabled = true;
+                    this.NV_Chua_Co_LoginTableAdapter.Fill(this.dS.DSNV_CHUA_CO_TK_LOGIN);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Không thể tạo tài khoản.\n" + ex.Message, "", MessageBoxButtons.OK);
+                    return;
+                }
+            
             }
             
             

@@ -35,18 +35,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XtraReport_DSTaiKhoan));
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
-            this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.pageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfo2 = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.lblTitle = new DevExpress.XtraReports.UI.XRLabel();
+            this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table1 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.table2 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -72,29 +72,8 @@
             this.BottomMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.pageInfo1,
             this.pageInfo2});
+            this.BottomMargin.HeightF = 102.8333F;
             this.BottomMargin.Name = "BottomMargin";
-            // 
-            // ReportHeader
-            // 
-            this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.lblTitle});
-            this.ReportHeader.HeightF = 60F;
-            this.ReportHeader.Name = "ReportHeader";
-            // 
-            // GroupHeader1
-            // 
-            this.GroupHeader1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table1});
-            this.GroupHeader1.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader1.HeightF = 28F;
-            this.GroupHeader1.Name = "GroupHeader1";
-            // 
-            // Detail
-            // 
-            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table2});
-            this.Detail.HeightF = 25F;
-            this.Detail.Name = "Detail";
             // 
             // pageInfo1
             // 
@@ -113,6 +92,13 @@
             this.pageInfo2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.pageInfo2.TextFormatString = "Page {0} of {1}";
             // 
+            // ReportHeader
+            // 
+            this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.lblTitle});
+            this.ReportHeader.HeightF = 60F;
+            this.ReportHeader.Name = "ReportHeader";
+            // 
             // lblTitle
             // 
             this.lblTitle.ForeColor = System.Drawing.Color.Red;
@@ -124,6 +110,14 @@
             this.lblTitle.StylePriority.UseTextAlignment = false;
             this.lblTitle.Text = "DANH SÁCH TÀI KHOẢN ĐÃ MỞ TỪ NGÀY ... ĐẾN NGÀY .... Ở ....";
             this.lblTitle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // GroupHeader1
+            // 
+            this.GroupHeader1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table1});
+            this.GroupHeader1.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader1.HeightF = 28F;
+            this.GroupHeader1.Name = "GroupHeader1";
             // 
             // table1
             // 
@@ -180,6 +174,13 @@
             this.tableCell4.Text = "Ngày mở";
             this.tableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.tableCell4.Weight = 0.30310188254582737D;
+            // 
+            // Detail
+            // 
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table2});
+            this.Detail.HeightF = 25F;
+            this.Detail.Name = "Detail";
             // 
             // table2
             // 
@@ -319,6 +320,7 @@
             this.DataMember = "DSTK";
             this.DataSource = this.sqlDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
+            this.Margins = new DevExpress.Drawing.DXMargins(100F, 100F, 100F, 102.8333F);
             this.PageHeight = 1200;
             this.PageWidth = 927;
             this.PaperKind = System.Drawing.Printing.PaperKind.LetterExtra;

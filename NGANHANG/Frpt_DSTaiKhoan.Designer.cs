@@ -31,11 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.robAll = new System.Windows.Forms.RadioButton();
             this.robOne = new System.Windows.Forms.RadioButton();
+            this.robAll = new System.Windows.Forms.RadioButton();
             this.pnlCN = new System.Windows.Forms.Panel();
-            this.cmbChiNhanh = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.cmbChiNhanh = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dteFromDate = new DevExpress.XtraEditors.DateEdit();
             this.dteToDate = new DevExpress.XtraEditors.DateEdit();
@@ -73,29 +73,16 @@
             this.panel1.Controls.Add(this.robOne);
             this.panel1.Controls.Add(this.robAll);
             this.panel1.Location = new System.Drawing.Point(185, 123);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 89);
             this.panel1.TabIndex = 2;
-            // 
-            // robAll
-            // 
-            this.robAll.AutoSize = true;
-            this.robAll.Location = new System.Drawing.Point(44, 16);
-            this.robAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.robAll.Name = "robAll";
-            this.robAll.Size = new System.Drawing.Size(154, 24);
-            this.robAll.TabIndex = 0;
-            this.robAll.TabStop = true;
-            this.robAll.Text = "Tất cả chi nhánh";
-            this.robAll.UseVisualStyleBackColor = true;
-            this.robAll.CheckedChanged += new System.EventHandler(this.robAll_CheckedChanged);
             // 
             // robOne
             // 
             this.robOne.AutoSize = true;
             this.robOne.Location = new System.Drawing.Point(44, 48);
-            this.robOne.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.robOne.Margin = new System.Windows.Forms.Padding(4);
             this.robOne.Name = "robOne";
             this.robOne.Size = new System.Drawing.Size(135, 24);
             this.robOne.TabIndex = 1;
@@ -104,25 +91,28 @@
             this.robOne.UseVisualStyleBackColor = true;
             this.robOne.CheckedChanged += new System.EventHandler(this.robAll_CheckedChanged);
             // 
+            // robAll
+            // 
+            this.robAll.AutoSize = true;
+            this.robAll.Location = new System.Drawing.Point(44, 16);
+            this.robAll.Margin = new System.Windows.Forms.Padding(4);
+            this.robAll.Name = "robAll";
+            this.robAll.Size = new System.Drawing.Size(154, 24);
+            this.robAll.TabIndex = 0;
+            this.robAll.TabStop = true;
+            this.robAll.Text = "Tất cả chi nhánh";
+            this.robAll.UseVisualStyleBackColor = true;
+            this.robAll.CheckedChanged += new System.EventHandler(this.robAll_CheckedChanged);
+            // 
             // pnlCN
             // 
             this.pnlCN.Controls.Add(this.label3);
             this.pnlCN.Controls.Add(this.cmbChiNhanh);
             this.pnlCN.Location = new System.Drawing.Point(586, 123);
-            this.pnlCN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlCN.Margin = new System.Windows.Forms.Padding(4);
             this.pnlCN.Name = "pnlCN";
             this.pnlCN.Size = new System.Drawing.Size(405, 72);
             this.pnlCN.TabIndex = 3;
-            // 
-            // cmbChiNhanh
-            // 
-            this.cmbChiNhanh.FormattingEnabled = true;
-            this.cmbChiNhanh.Location = new System.Drawing.Point(139, 19);
-            this.cmbChiNhanh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cmbChiNhanh.Name = "cmbChiNhanh";
-            this.cmbChiNhanh.Size = new System.Drawing.Size(243, 28);
-            this.cmbChiNhanh.TabIndex = 0;
-            this.cmbChiNhanh.SelectedIndexChanged += new System.EventHandler(this.cmbChiNhanh_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -133,6 +123,17 @@
             this.label3.Size = new System.Drawing.Size(84, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "Chi nhánh";
+            // 
+            // cmbChiNhanh
+            // 
+            this.cmbChiNhanh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbChiNhanh.FormattingEnabled = true;
+            this.cmbChiNhanh.Location = new System.Drawing.Point(139, 19);
+            this.cmbChiNhanh.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbChiNhanh.Name = "cmbChiNhanh";
+            this.cmbChiNhanh.Size = new System.Drawing.Size(243, 28);
+            this.cmbChiNhanh.TabIndex = 0;
+            this.cmbChiNhanh.SelectedIndexChanged += new System.EventHandler(this.cmbChiNhanh_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -147,27 +148,27 @@
             // dteFromDate
             // 
             this.dteFromDate.EditValue = null;
-            this.dteFromDate.Location = new System.Drawing.Point(499, 268);
-            this.dteFromDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dteFromDate.Location = new System.Drawing.Point(624, 335);
+            this.dteFromDate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dteFromDate.Name = "dteFromDate";
             this.dteFromDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dteFromDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dteFromDate.Size = new System.Drawing.Size(215, 22);
+            this.dteFromDate.Size = new System.Drawing.Size(269, 22);
             this.dteFromDate.TabIndex = 5;
             // 
             // dteToDate
             // 
             this.dteToDate.EditValue = null;
-            this.dteToDate.Location = new System.Drawing.Point(499, 324);
-            this.dteToDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dteToDate.Location = new System.Drawing.Point(624, 405);
+            this.dteToDate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dteToDate.Name = "dteToDate";
             this.dteToDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dteToDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dteToDate.Size = new System.Drawing.Size(215, 22);
+            this.dteToDate.Size = new System.Drawing.Size(269, 22);
             this.dteToDate.TabIndex = 6;
             // 
             // btnWatch
@@ -196,7 +197,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frpt_DSTaiKhoan";
             this.Text = "Frpt_DSTaiKhoan";
             this.Load += new System.EventHandler(this.Frpt_DSTaiKhoan_Load);

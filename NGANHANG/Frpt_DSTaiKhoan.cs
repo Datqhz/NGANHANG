@@ -58,7 +58,6 @@ namespace NGANHANG
                 title = ((DataRowView)Program.bds_dspm[cmbChiNhanh.SelectedIndex]).Row[0].ToString();
                 
                 Program.servername = cmbChiNhanh.SelectedValue.ToString();
-                Console.WriteLine("Tên server dstk: " + Program.servername);
             }
             catch (Exception ex)
             {
@@ -91,6 +90,7 @@ namespace NGANHANG
                 {
 
                 }
+                Console.WriteLine("từ ngày: "+ dteFromDate.Text + " Đến ngày: " + dteToDate.Text);
                 XtraReport_DSTaiKhoan rpt = new XtraReport_DSTaiKhoan(dteFromDate.Text, dteToDate.Text);
                 rpt.lblTitle.Text = "DANH SÁCH TÀI KHOẢN ĐÃ MỞ TỪ NGÀY " + dteFromDate.Text + " ĐẾN NGÀY " + dteToDate.Text + "\n TẠI " + title;
                 ReportPrintTool print = new ReportPrintTool(rpt);

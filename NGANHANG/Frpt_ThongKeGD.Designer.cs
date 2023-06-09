@@ -80,27 +80,29 @@
             // dteFromDate
             // 
             this.dteFromDate.EditValue = null;
-            this.dteFromDate.Location = new System.Drawing.Point(349, 139);
-            this.dteFromDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dteFromDate.Location = new System.Drawing.Point(545, 218);
+            this.dteFromDate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dteFromDate.Name = "dteFromDate";
+            this.dteFromDate.Properties.AllowFocused = false;
             this.dteFromDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dteFromDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dteFromDate.Size = new System.Drawing.Size(232, 22);
+            this.dteFromDate.Size = new System.Drawing.Size(362, 22);
             this.dteFromDate.TabIndex = 10;
             // 
             // dteToDate
             // 
             this.dteToDate.EditValue = null;
-            this.dteToDate.Location = new System.Drawing.Point(349, 211);
-            this.dteToDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dteToDate.Location = new System.Drawing.Point(545, 330);
+            this.dteToDate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dteToDate.Name = "dteToDate";
+            this.dteToDate.Properties.AllowFocused = false;
             this.dteToDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dteToDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dteToDate.Size = new System.Drawing.Size(232, 22);
+            this.dteToDate.Size = new System.Drawing.Size(362, 22);
             this.dteToDate.TabIndex = 11;
             // 
             // btnCheck

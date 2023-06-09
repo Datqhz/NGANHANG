@@ -83,7 +83,7 @@ namespace NGANHANG
             gcKhachHang.Enabled = false;
             bdsKhachHang.AddNew();
             txtMACN.Text = macn;
-            btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnLamMoi.Enabled = btnPhucHoi.Enabled = false;
+            btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnLamMoi.Enabled = btnPhucHoi.Enabled = btnDong.Enabled = false;
             btnGhi.Enabled = btnHuy.Enabled = true;
             cmbPhai.SelectedIndex = 0;
         }
@@ -321,11 +321,6 @@ namespace NGANHANG
                 bdsKhachHang.ResetCurrentItem();
                 this.khachHangTableAdapter.Connection.ConnectionString = Program.connstr;
                 this.khachHangTableAdapter.Update(this.dS.KhachHang);
-                /*stackstr += ";" + txtCMND.Text.Trim() + ";" +
-                    txtHo.Text.Trim() + ";" + txtTen.Text.Trim() + ";"
-                    + txtDiaChi.Text.Trim() + ";" + cmbPhai.Text.Trim() + ";" + dteNgayCap.Text.Trim() + ";"
-                    + txtSDT.Text.Trim() + ";" + txtMACN.Text.Trim();*/
-                Console.WriteLine(stackstr);
                 myStack.Push(stackstr);
                 thongtin = "";
             }catch(Exception ex)
@@ -334,7 +329,7 @@ namespace NGANHANG
                 thongtin = "";
                 return;
             }
-            btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnLamMoi.Enabled = btnPhucHoi.Enabled = true;
+            btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnLamMoi.Enabled = btnPhucHoi.Enabled = btnDong.Enabled = true;
             btnGhi.Enabled = btnHuy.Enabled = true;
             grbTT.Enabled = false;
             gcKhachHang.Enabled = true;
@@ -387,7 +382,7 @@ namespace NGANHANG
             {
                 bdsKhachHang.Position = row;
             }
-            btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = true;
+            btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = btnDong.Enabled = true;
             btnGhi.Enabled = btnPhucHoi.Enabled = false;
             grbTT.Enabled = false;
             gcKhachHang.Enabled = true;

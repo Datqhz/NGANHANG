@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.cmbSTK = new System.Windows.Forms.ComboBox();
             this.btnXem = new System.Windows.Forms.Button();
             this.dteDenNgay = new DevExpress.XtraEditors.DateEdit();
             this.dteTuNgay = new DevExpress.XtraEditors.DateEdit();
@@ -49,7 +50,6 @@
             this.txtSDD = new DevExpress.XtraEditors.TextEdit();
             this.label_1 = new System.Windows.Forms.Label();
             this.label_2 = new System.Windows.Forms.Label();
-            this.cmbSTK = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dteDenNgay.Properties)).BeginInit();
@@ -67,7 +67,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(170, 36);
+            this.label1.Location = new System.Drawing.Point(212, 45);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 18);
             this.label1.TabIndex = 0;
@@ -84,18 +85,29 @@
             this.panelControl1.Controls.Add(this.label1);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
-            this.panelControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1226, 125);
+            this.panelControl1.Size = new System.Drawing.Size(1226, 156);
             this.panelControl1.TabIndex = 1;
+            // 
+            // cmbSTK
+            // 
+            this.cmbSTK.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSTK.FormattingEnabled = true;
+            this.cmbSTK.Location = new System.Drawing.Point(360, 45);
+            this.cmbSTK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbSTK.Name = "cmbSTK";
+            this.cmbSTK.Size = new System.Drawing.Size(570, 24);
+            this.cmbSTK.TabIndex = 7;
             // 
             // btnXem
             // 
             this.btnXem.BackColor = System.Drawing.Color.White;
             this.btnXem.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXem.Location = new System.Drawing.Point(798, 51);
+            this.btnXem.Location = new System.Drawing.Point(998, 64);
+            this.btnXem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnXem.Name = "btnXem";
-            this.btnXem.Size = new System.Drawing.Size(75, 36);
+            this.btnXem.Size = new System.Drawing.Size(94, 45);
             this.btnXem.TabIndex = 6;
             this.btnXem.Text = "Xem";
             this.btnXem.UseVisualStyleBackColor = false;
@@ -104,8 +116,8 @@
             // dteDenNgay
             // 
             this.dteDenNgay.EditValue = null;
-            this.dteDenNgay.Location = new System.Drawing.Point(586, 85);
-            this.dteDenNgay.Margin = new System.Windows.Forms.Padding(4);
+            this.dteDenNgay.Location = new System.Drawing.Point(732, 106);
+            this.dteDenNgay.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dteDenNgay.Name = "dteDenNgay";
             this.dteDenNgay.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dteDenNgay.Properties.Appearance.Options.UseFont = true;
@@ -113,14 +125,14 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dteDenNgay.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dteDenNgay.Size = new System.Drawing.Size(159, 24);
+            this.dteDenNgay.Size = new System.Drawing.Size(199, 24);
             this.dteDenNgay.TabIndex = 4;
             // 
             // dteTuNgay
             // 
             this.dteTuNgay.EditValue = null;
-            this.dteTuNgay.Location = new System.Drawing.Point(288, 86);
-            this.dteTuNgay.Margin = new System.Windows.Forms.Padding(4);
+            this.dteTuNgay.Location = new System.Drawing.Point(360, 108);
+            this.dteTuNgay.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dteTuNgay.Name = "dteTuNgay";
             this.dteTuNgay.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dteTuNgay.Properties.Appearance.Options.UseFont = true;
@@ -128,14 +140,15 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dteTuNgay.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dteTuNgay.Size = new System.Drawing.Size(172, 24);
+            this.dteTuNgay.Size = new System.Drawing.Size(215, 24);
             this.dteTuNgay.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(488, 87);
+            this.label3.Location = new System.Drawing.Point(610, 109);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 18);
             this.label3.TabIndex = 2;
@@ -145,7 +158,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(170, 89);
+            this.label2.Location = new System.Drawing.Point(212, 111);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 18);
             this.label2.TabIndex = 1;
@@ -156,9 +170,9 @@
             this.panel1.Controls.Add(this.dgvLSGD);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 125);
+            this.panel1.Location = new System.Drawing.Point(0, 156);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1226, 629);
+            this.panel1.Size = new System.Drawing.Size(1226, 598);
             this.panel1.TabIndex = 2;
             // 
             // dgvLSGD
@@ -177,7 +191,7 @@
             this.dgvLSGD.Name = "dgvLSGD";
             this.dgvLSGD.RowHeadersWidth = 50;
             this.dgvLSGD.RowTemplate.Height = 24;
-            this.dgvLSGD.Size = new System.Drawing.Size(1226, 565);
+            this.dgvLSGD.Size = new System.Drawing.Size(1226, 534);
             this.dgvLSGD.TabIndex = 2;
             // 
             // SDDau
@@ -299,22 +313,14 @@
             this.label_2.TabIndex = 0;
             this.label_2.Text = "Số dư ngày";
             // 
-            // cmbSTK
-            // 
-            this.cmbSTK.FormattingEnabled = true;
-            this.cmbSTK.Location = new System.Drawing.Point(288, 36);
-            this.cmbSTK.Name = "cmbSTK";
-            this.cmbSTK.Size = new System.Drawing.Size(457, 24);
-            this.cmbSTK.TabIndex = 7;
-            // 
-            // frmThongKeGD
+            // frmLichSuGD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1226, 754);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelControl1);
-            this.Name = "frmThongKeGD";
+            this.Name = "frmLichSuGD";
             this.Text = "Thống kê giao dịch";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmThongKeGD_Load);

@@ -15,7 +15,7 @@ namespace NGANHANG
         private string MANVCU = "";
         private string CMND = "";
         private int temp = 0;
-
+        
         public void set_CMND(string str)
         {
             this.CMND = str;
@@ -90,7 +90,7 @@ namespace NGANHANG
                     {
                         Program.ExecSqlNonQuery("EXEC SP_CHUYENCONGTAC_SONGSONG \'" + MANVCU + "\', \'TEST\', \'" + cmbCN.SelectedValue.ToString() + "\'");
                     }
-                    
+                    Close();
                                                          
                 }
                 catch (Exception ex)
@@ -105,8 +105,7 @@ namespace NGANHANG
         }
         private void cmbCN_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Program.myReader = Program.ExecSqlDataReader("SELECT * FROM LINK0.NGANHANG.DB0.NHANVIEN WHERE CMND = \'" + CMND + "\' AND MACN = \'" + cmbCN.SelectedValue.ToString().Trim() + "\'");
-            Program.myReader.Read();
+            Program.myReader = Program.ExecSqlDataReader("SELECT * FROM LINK1.NGANHANG.DBO.NHANVIEN WHERE CMND = \'" + CMND + "\'");
             if(Program.myReader.HasRows)
             {
                 pnlMNV.Visible = false;

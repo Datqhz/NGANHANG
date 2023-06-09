@@ -102,7 +102,6 @@ namespace NGANHANG
         private void btnPhucHoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             string str = myStack.Pop().ToString();
-            Console.WriteLine(str);
             string[] strItem = str.Split(';');
             if (strItem[0] == "delete")
             {
@@ -319,6 +318,24 @@ namespace NGANHANG
                 txtSDT.Focus();
                 return;
             }
+            
+            if(!(txtCMND.Text.Trim() == ((DataRowView)bdsNV[bdsNV.Position])["CMND"].ToString()))
+            {
+                Program.myReader = Program.ExecSqlDataReader("SELECT MANV FROM LINK0.NGANHANG.DBO.NHANVIEN WHERE CMND =  '" + txtCMND.Text.Trim() + "'");
+                Program.myReader.Read();
+                if (Program.myReader.HasRows)
+                {
+                    MessageBox.Show("Số CMND đã được sử dụng! Vui lòng nhập lại.", "Thông báo", MessageBoxButtons.OK);
+                    txtCMND.Focus();
+                    Program.myReader.Close();
+                    return;
+                }else
+                {
+                   Program.myReader.Close();
+                }
+            }
+            
+            
 
 
             try

@@ -40,9 +40,10 @@ namespace NGANHANG
                                 Program.myReader.GetSqlMoney(3).ToDouble(),
                                 Program.myReader.GetSqlMoney(4).ToDouble());
                         }
+                        Program.myReader.Close();
                         if(dgvLSGD.RowCount>1)
                         {
-                            Program.myReader.Close();
+                            
                             Console.WriteLine("bd: " );
                             lblSDD.Text = dteTuNgay.Text;
                             lblSDC.Text = dteDenNgay.Text;

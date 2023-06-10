@@ -81,7 +81,7 @@
             // 
             this.dteFromDate.EditValue = null;
             this.dteFromDate.Location = new System.Drawing.Point(545, 218);
-            this.dteFromDate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dteFromDate.Margin = new System.Windows.Forms.Padding(6);
             this.dteFromDate.Name = "dteFromDate";
             this.dteFromDate.Properties.AllowFocused = false;
             this.dteFromDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -95,7 +95,7 @@
             // 
             this.dteToDate.EditValue = null;
             this.dteToDate.Location = new System.Drawing.Point(545, 330);
-            this.dteToDate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dteToDate.Margin = new System.Windows.Forms.Padding(6);
             this.dteToDate.Name = "dteToDate";
             this.dteToDate.Properties.AllowFocused = false;
             this.dteToDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -152,7 +152,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frpt_ThongKeGD";
-            this.Text = "Frpt_ThongKeGD";
+            this.Text = "Thống kê giao dịch";
             ((System.ComponentModel.ISupportInitialize)(this.dteFromDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dteFromDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dteToDate.Properties.CalendarTimeProperties)).EndInit();

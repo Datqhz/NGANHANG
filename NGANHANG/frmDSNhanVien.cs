@@ -97,6 +97,17 @@ namespace NGANHANG
             gcNhanVien.Enabled = false;
             chucnang = 1;
             cmbPhai.SelectedIndex = 0;
+            Program.myReader = Program.ExecSqlDataReader("SELECT TOP(1) MANV FROM LINK0.NGANHANG.DBO.NHANVIEN ORDER BY MANV DESC");
+            Program.myReader.Read();
+            int temp = int.Parse(Program.myReader.GetString(0).Trim().Substring(2))+1;
+            Program.myReader.Close();
+            if (temp < 10)
+            {
+                txtMaNV.Text = "NV0" + temp;
+            }else
+            {
+                txtMaNV.Text = "NV" + temp;
+            }
         }
 
         private void btnPhucHoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -343,19 +354,7 @@ namespace NGANHANG
                 string stackstr = "";
                 if (chucnang == 1)
                 {
-                    Program.myReader = Program.ExecSqlDataReader("EXEC find_nv_by_manv '" + txtMaNV.Text.Trim() + "'");
-                    Program.myReader.Read();
-                    if (Program.myReader.HasRows)
-                    {
-                        MessageBox.Show("Mã nhân viên đã tồn tại", "Thông báo", MessageBoxButtons.OK);
-                        Program.myReader.Close();
-                        return;
-                    }
-                    else
-                    {
-                        stackstr = "add;" + txtMaNV.Text.Trim();
-                        Program.myReader.Close();
-                    }
+                    stackstr = "add;" + txtMaNV.Text.Trim();
                 }
                 else
                 {

@@ -149,7 +149,7 @@
             // 
             this.dteFromDate.EditValue = null;
             this.dteFromDate.Location = new System.Drawing.Point(624, 335);
-            this.dteFromDate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dteFromDate.Margin = new System.Windows.Forms.Padding(5);
             this.dteFromDate.Name = "dteFromDate";
             this.dteFromDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -162,7 +162,7 @@
             // 
             this.dteToDate.EditValue = null;
             this.dteToDate.Location = new System.Drawing.Point(624, 405);
-            this.dteToDate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dteToDate.Margin = new System.Windows.Forms.Padding(5);
             this.dteToDate.Name = "dteToDate";
             this.dteToDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -199,7 +199,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frpt_DSTaiKhoan";
-            this.Text = "Frpt_DSTaiKhoan";
+            this.Text = "Báo cáo DS Tài khoản";
             this.Load += new System.EventHandler(this.Frpt_DSTaiKhoan_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

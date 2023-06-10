@@ -48,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(783, 287);
             this.Controls.Add(this.btnXem);
             this.Name = "FrptDSKH";
-            this.Text = "FrptDSKH";
+            this.Text = "Danh sách khách hàng";
             this.ResumeLayout(false);
 
         }

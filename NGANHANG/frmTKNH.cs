@@ -15,6 +15,7 @@ namespace NGANHANG
     {
         private int vitri = 0;
         private string macn = "";
+
         Stack myStack = new Stack();
         private string task = "";
         public frmTKNH()
@@ -67,6 +68,15 @@ namespace NGANHANG
             bdsTK.AddNew();
             btnThem.Enabled = btnXoa.Enabled = btnLamMoi.Enabled = btnDong.Enabled = btnPhucHoi.Enabled = btnLamMoi.Enabled = false;
             btnHuyTT.Enabled = btnGhi.Enabled =  true;
+
+            Program.myReader = Program.ExecSqlDataReader("select TOP(1) SOTK from TaiKhoan ORDER BY SOTK DESC");
+            Program.myReader.Read();
+            if (Program.myReader.HasRows)
+            {
+                txtSTK.Text =  Convert.ToString(int.Parse(Program.myReader.GetSqlString(0).ToString())+1);
+
+            }
+            Program.myReader.Close();
             Program.myReader = Program.ExecSqlDataReader("select * from ChiNhanh");
             Program.myReader.Read();
             if (Program.myReader.HasRows)
@@ -225,7 +235,7 @@ namespace NGANHANG
                 }else
                 {
                     Program.myReader.Close();
-                    Program.myReader = Program.ExecSqlDataReader("SELECT * FROM TaiKhoan WHERE SOTK = " + txtSTK.Text.Trim());
+                    /*Program.myReader = Program.ExecSqlDataReader("SELECT * FROM TaiKhoan WHERE SOTK = " + txtSTK.Text.Trim());
                     Program.myReader.Read();
                     if (Program.myReader.HasRows)
                     {
@@ -233,9 +243,9 @@ namespace NGANHANG
                         Program.myReader.Close();
                         txtSTK.Focus();
                         return;
-                    }
-                    else
-                    {
+                    }*/
+/*                    else
+                    {*/
                         task += txtSTK.Text.Trim();
                         Program.myReader.Close();
                         bdsTK.EndEdit();
@@ -248,7 +258,7 @@ namespace NGANHANG
                         btnThem.Enabled = btnXoa.Enabled = btnLamMoi.Enabled = btnDong.Enabled = btnPhucHoi.Enabled = btnLamMoi.Enabled = true;
                         btnHuyTT.Enabled = btnGhi.Enabled = false;
                         myStack.Push(task);
-                    }
+/*                    }*/
                 }
             }catch (Exception ex)
             {
@@ -257,7 +267,7 @@ namespace NGANHANG
             }
             
         }
-
+        
         private void btnDong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Close();
@@ -287,7 +297,7 @@ namespace NGANHANG
                 return;
             }else
             {
-                Program.myReader = Program.ExecSqlDataReader("SELECT * FROM LINK2.NGANHANG.DBO.KhachHang WHERE CMND = " + txtCMND.Text.Trim());
+                Program.myReader = Program.ExecSqlDataReader("SELECT * FROM LINK0.NGANHANG.DBO.KhachHang WHERE CMND = " + txtCMND.Text.Trim());
                 Program.myReader.Read();
                 if (!Program.myReader.HasRows)
                 {

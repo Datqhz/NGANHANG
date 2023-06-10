@@ -114,6 +114,7 @@ namespace NGANHANG
             if (Convert.IsDBNull(Program.username))
             {
                 MessageBox.Show("Tài khoản bạn nhập không có quyền truy cập dữ liệu.\nVui lòng xem lại username và password.", "", MessageBoxButtons.OK);
+                Program.myReader.Close();
                 return ;
             }
             Program.mHoten = Program.myReader.GetString(1);

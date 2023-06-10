@@ -39,7 +39,6 @@
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.btnThem = new DevExpress.XtraBars.BarButtonItem();
             this.btnXoa = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSua = new DevExpress.XtraBars.BarButtonItem();
             this.btnPhucHoi = new DevExpress.XtraBars.BarButtonItem();
             this.btnLamMoi = new DevExpress.XtraBars.BarButtonItem();
             this.btnGhi = new DevExpress.XtraBars.BarButtonItem();
@@ -50,6 +49,7 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.btnSua = new DevExpress.XtraBars.BarButtonItem();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.label2 = new System.Windows.Forms.Label();
             this.dS = new NGANHANG.DS();
@@ -213,14 +213,6 @@
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnXoa_ItemClick);
             // 
-            // btnSua
-            // 
-            this.btnSua.Caption = "Sửa";
-            this.btnSua.Id = 2;
-            this.btnSua.ImageOptions.SvgImage = global::NGANHANG.Properties.Resources.actions_edit1;
-            this.btnSua.Name = "btnSua";
-            this.btnSua.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSua_ItemClick);
-            // 
             // btnPhucHoi
             // 
             this.btnPhucHoi.Caption = "Phục hồi";
@@ -304,6 +296,14 @@
             this.barDockControlRight.Location = new System.Drawing.Point(1166, 51);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 648);
+            // 
+            // btnSua
+            // 
+            this.btnSua.Caption = "Sửa";
+            this.btnSua.Id = 2;
+            this.btnSua.ImageOptions.SvgImage = global::NGANHANG.Properties.Resources.actions_edit1;
+            this.btnSua.Name = "btnSua";
+            this.btnSua.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSua_ItemClick);
             // 
             // panelControl2
             // 
@@ -530,6 +530,7 @@
             this.txtSTK.Location = new System.Drawing.Point(285, 61);
             this.txtSTK.Margin = new System.Windows.Forms.Padding(6);
             this.txtSTK.Name = "txtSTK";
+            this.txtSTK.ReadOnly = true;
             this.txtSTK.Size = new System.Drawing.Size(214, 23);
             this.txtSTK.TabIndex = 1;
             // 
@@ -546,7 +547,7 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.Name = "frmTKNH";
-            this.Text = "frmTKNH";
+            this.Text = "DS Tài khoản ngân hàng";
             this.Load += new System.EventHandler(this.frmTKNH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
